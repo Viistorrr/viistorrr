@@ -9,9 +9,13 @@ const Home = () => {
             <span className="block xl:inline">Software Engineer</span>
             {" - "}
             <span className="block text-indigo-600 xl:inline">
-              TI Consultant
+              IT Consultant
             </span>
           </h1>
+
+          <p className="mt-6 text-gray-500 text-lg">
+            Senior Frontend Developer
+          </p>
         </div>
       </main>
     </Layout>
