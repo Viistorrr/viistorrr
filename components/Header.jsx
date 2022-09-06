@@ -7,6 +7,10 @@ const navigation = [
   { name: "Home", href: "/" },
   { name: "Learn with Me", href: "/learnwithme" },
   { name: "Donate", href: "/donate" },
+  {
+    name: "Buy me a coffee :)",
+    href: "/https://www.buymeacoffee.com/viistorrr",
+  },
 ];
 
 const Header = () => {

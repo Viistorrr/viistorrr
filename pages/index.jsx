@@ -1,6 +1,17 @@
 import Layout from "../components/Layout";
 
-const Home = () => {
+//SSR implementation
+export async function getServerSideProps() {
+  const res = await fetch("https://jsonplaceholder.typicode.com/todos");
+  const data = await res.json();
+  return {
+    props: {
+      todos: data,
+    },
+  };
+}
+
+const Home = ({ todos }) => {
   return (
     <Layout>
       <main className="mt-16 mx-auto max-w-7xl px-4 sm:mt-24">
