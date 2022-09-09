@@ -13,8 +13,7 @@ const learnwithme = () => {
             </span>
           </h1>
           <p className="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-            let me know if you wanna join us to help people and get a better
-            world
+            Aveces organizo donaciones, si te querés sumar me podés escribir
           </p>
         </div>
       </main>

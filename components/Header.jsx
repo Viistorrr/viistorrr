@@ -2,14 +2,16 @@ import React from "react";
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
+import Link from "next/link";
 
 const navigation = [
-  { name: "Home", href: "/" },
-  { name: "Learn with Me", href: "/learnwithme" },
-  { name: "Donate", href: "/donate" },
+  { name: "Inicio", href: "/", target: "" },
+  { name: "👨🏾‍💻 Aprende conmigo", href: "/webdevpath", target: "" },
+  { name: "Donaciones", href: "/donate", target: "" },
   {
-    name: "Buy me a coffee :)",
-    href: "/https://www.buymeacoffee.com/viistorrr",
+    name: "☕ Si querés, invitame un cafecito",
+    href: "https://www.buymeacoffee.com/viistorrr",
+    target: "_blank",
   },
 ];
 
@@ -37,13 +39,15 @@ const Header = () => {
             </div>
             <div className="hidden md:flex md:space-x-10">
               {navigation.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="font-medium text-gray-500 hover:text-gray-900"
-                >
-                  {item.name}
-                </a>
+                <Link key={item.name} href={item.href} passHref={true}>
+                  <a
+                    target={item.target}
+                    key={item.name}
+                    className="font-medium text-gray-500 hover:text-gray-900"
+                  >
+                    {item.name}
+                  </a>
+                </Link>
               ))}
             </div>
           </nav>
