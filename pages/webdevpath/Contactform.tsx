@@ -2,11 +2,19 @@ import { useState, useRef } from "react";
 import { Switch } from "@headlessui/react";
 import { sendContactForm } from "../../services";
 
+/**
+ * TODO: Add email for me
+ * TODO: Add ModalMessage with error
+ * TODO: Add ModalMessage with success
+ * TODO: Email template
+ *
+ */
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function Example() {
+export default function ContactForm() {
   const [agreed, setAgreed] = useState(false);
   const [message, setMessage] = useState("");
   const formRef = useRef(null);
@@ -22,7 +30,7 @@ export default function Example() {
     });
     if (res == 0) {
       setMessage(
-        "Gracias por tu interés, revisa tu correoy agenda tu One on One!"
+        "Gracias por tu interés, revisa tu correo y agenda tu One on One!"
       );
       formRef.current.reset();
     } else {
@@ -127,7 +135,7 @@ export default function Example() {
                   name="fullname"
                   id="fullname"
                   autoComplete="given-name"
-                  className="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                  className="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 uppercase"
                 />
               </div>
             </div>
