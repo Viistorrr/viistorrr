@@ -6,7 +6,7 @@ import { CheckIcon } from "@heroicons/react/outline";
 import { sendContactForm } from "../../services";
 
 /**
- * TODO: Add email for me
+ 
  * TODO: Email template
  */
 
