@@ -6,10 +6,11 @@ import Link from "next/link";
 
 const navigation = [
   { name: "Inicio", href: "/", target: "" },
-  { name: "👨🏾‍💻 Aprende conmigo", href: "/webdevpath", target: "" },
-  { name: "Donaciones", href: "/donate", target: "" },
+  { name: "Experiencia", href: "/experience", target: "" },
+  { name: "👨🏾‍💻 Yo te enseño", href: "/webdevpath", target: "" },
+  { name: "viiiiis App", href: "/viiiiis", target: "" },
   {
-    name: "☕ Si querés, invitame un cafecito",
+    name: "☕ Buy me a coffee",
     href: "https://www.buymeacoffee.com/viistorrr",
     target: "_blank",
   },

@@ -1,13 +1,13 @@
 import { useState, useRef } from "react";
 import { Switch } from "@headlessui/react";
+import { Fragment } from "react";
+import { Dialog, Transition } from "@headlessui/react";
+import { CheckIcon } from "@heroicons/react/outline";
 import { sendContactForm } from "../../services";
 
 /**
  * TODO: Add email for me
- * TODO: Add ModalMessage with error
- * TODO: Add ModalMessage with success
  * TODO: Email template
- *
  */
 
 function classNames(...classes) {
@@ -15,12 +15,13 @@ function classNames(...classes) {
 }
 
 export default function ContactForm() {
+  const [openModalMessage, setOpenModalMessage] = useState(false);
   const [agreed, setAgreed] = useState(false);
   const [message, setMessage] = useState("");
   const formRef = useRef(null);
   const submitContact = async (e) => {
     e.preventDefault();
-    console.log("-------r", e);
+
     const res = await sendContactForm({
       name: e.target[0].value,
       profession: e.target[1].value,
@@ -29,15 +30,85 @@ export default function ContactForm() {
       comment: e.target[4].value,
     });
     if (res == 0) {
-      setMessage(
-        "Gracias por tu interés, revisa tu correo y agenda tu One on One!"
-      );
+      setOpenModalMessage(true);
       formRef.current.reset();
     } else {
       setMessage(
         "Lo siento, no pude recibir tu mensaje, por favor intenta de nuevo"
       );
     }
+  };
+
+  const ModalMessage = () => {
+    return (
+      <Transition.Root show={openModalMessage} as={Fragment}>
+        <Dialog
+          as="div"
+          className="relative z-10"
+          onClose={setOpenModalMessage}
+        >
+          <Transition.Child
+            as={Fragment}
+            enter="ease-out duration-300"
+            enterFrom="opacity-0"
+            enterTo="opacity-100"
+            leave="ease-in duration-200"
+            leaveFrom="opacity-100"
+            leaveTo="opacity-0"
+          >
+            <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
+          </Transition.Child>
+
+          <div className="fixed inset-0 z-10 overflow-y-auto">
+            <div className="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+              <Transition.Child
+                as={Fragment}
+                enter="ease-out duration-300"
+                enterFrom="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                enterTo="opacity-100 translate-y-0 sm:scale-100"
+                leave="ease-in duration-200"
+                leaveFrom="opacity-100 translate-y-0 sm:scale-100"
+                leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+              >
+                <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-white px-4 pt-5 pb-4 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-sm sm:p-6">
+                  <div>
+                    <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-green-100">
+                      <CheckIcon
+                        className="h-6 w-6 text-green-600"
+                        aria-hidden="true"
+                      />
+                    </div>
+                    <div className="mt-3 text-center sm:mt-5">
+                      <Dialog.Title
+                        as="h3"
+                        className="text-lg font-medium leading-6 text-gray-900"
+                      >
+                        Gracias por tu interés en la mentoría
+                      </Dialog.Title>
+                      <div className="mt-2">
+                        <p className="text-sm text-gray-500">
+                          Te envié un correo donde podrás agendar una Intro para
+                          conocernos
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="mt-5 sm:mt-6">
+                    <button
+                      type="button"
+                      className="inline-flex w-full justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:text-sm"
+                      onClick={() => setOpenModalMessage(false)}
+                    >
+                      <i>Allá Nospi !</i> 😁✌🏾
+                    </button>
+                  </div>
+                </Dialog.Panel>
+              </Transition.Child>
+            </div>
+          </div>
+        </Dialog>
+      </Transition.Root>
+    );
   };
 
   return (
@@ -112,8 +183,7 @@ export default function ContactForm() {
 
         <div className="mt-12">
           <div>
-            {message}
-            <span onClick={() => setMessage("")}></span>
+            <ModalMessage />
           </div>
           <form
             ref={formRef}
@@ -127,10 +197,11 @@ export default function ContactForm() {
                 htmlFor="fullname"
                 className="block text-sm font-medium text-gray-700"
               >
-                Nombre Completo
+                Nombre
               </label>
               <div className="mt-1">
                 <input
+                  required
                   type="text"
                   name="fullname"
                   id="fullname"
@@ -148,6 +219,7 @@ export default function ContactForm() {
               </label>
               <div className="mt-1">
                 <input
+                  required
                   type="text"
                   name="profession"
                   id="profession"
@@ -165,6 +237,7 @@ export default function ContactForm() {
               </label>
               <div className="mt-1">
                 <input
+                  required
                   id="email"
                   name="email"
                   type="email"
@@ -182,7 +255,8 @@ export default function ContactForm() {
               </label>
               <div className="relative mt-1 rounded-md shadow-sm">
                 <input
-                  type="text"
+                  required
+                  type="number"
                   name="phone-number"
                   id="phone-number"
                   autoComplete="tel"
@@ -202,6 +276,7 @@ export default function ContactForm() {
               </label>
               <div className="mt-1">
                 <textarea
+                  required
                   id="message"
                   name="message"
                   rows={4}

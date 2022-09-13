@@ -1,4 +1,5 @@
 import Layout from "../components/Layout";
+import Timeline from "../components/Timeline";
 
 //SSR implementation
 export async function getServerSideProps() {

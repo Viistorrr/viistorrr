@@ -22,22 +22,24 @@ async function sendEmail(req, res) {
         <div class="img-container" style="display: flex;justify-content: center;align-items: center;border-radius: 5px;overflow: hidden; font-family: 'helvetica', 'ui-sans';">
               </div>
               <div class="container" style="margin-left: 20px;margin-right: 20px;">
-              <h3>Hola ${req.body.fullname.toUpperCase()},</h3>
-              <h5>Gracias por interés en la mentoría para pronto convertirte en Desarrollador Frontend con ReactJS y NextJS, para conocernos podés agendar 📆 un One on One 👇🏾</h5>
-              <a href="https://www.appointfix.com/book/viistorrr" target="_blank" style="text-decoration: none; color: #fff; background-color: #000; padding: 10px 20px; border-radius: 5px; font-size: 16px; font-weight: 600;">Agendar</a>
+              <h4> 📤 integrar un servicio para envío de correos electrónicos como éste lo podrás aprender en ésta carrera.</h4>
+              <h3>Hola ${req.body.fullname.toUpperCase()} :) Bienvenido!</h3>
+              <h5>Gracias por tu interés en la mentoría para convertirte en Desarrollador Frontend con ReactJS y NextJS, acá podés agendar 📆 para conocernos 👇🏾</h5>
+              <a href="https://www.appointfix.com/book/viistorrr" target="_blank" style="text-decoration: none; color: #fff; background-color: #000; padding: 10px 20px; border-radius: 5px; font-size: 16px; font-weight: 600;">Agenda tu Intro📆</a>
               <div style="font-size: 16px;">
-              <p>Estas mentorías no tienen ningún costo, pero si querés apoyar mi trabajo, me podés invitar un café ☕️ en el siguiente link: </p>
-                <a href="https://www.buymeacoffee.com/viistorrr" target="_blank" style="text-decoration: none; color: #fff;background-color: #804000; padding: 10px 20px; border-radius: 5px; font-size: 16px; font-weight: 600;">Buy me a coffee</a>
+              <p>Estas mentorías no tienen ningún costo, si en cualquier momento consideras que te sirven los conceptos que te he enseñado, me podés invitar un cafecito que yo te lo recibo ☕️ en el siguiente link: </p>
+                <a href="https://www.buymeacoffee.com/viistorrr" target="_blank" style="text-decoration: none; color: #fff;background-color: #804000; padding: 10px 20px; border-radius: 5px; font-size: 16px; font-weight: 600;">Un cafecito para viis ☕️</a>
               Gracias!!! 😁✌🏾
               </p>
               </div>
-              <p class="footer" style="font-size: 16px;padding-bottom: 20px;border-bottom: 1px solid #D1D5DB;">Regards<br>Víctor Meza<br>SR Frontend Dev - IT Consultant</p>
+              <p class="footer" style="font-size: 16px;padding-bottom: 20px;border-bottom: 1px solid #D1D5DB;">Saludos<br>Víctor Meza<br>SR Frontend Dev - IT Consultant</p>
               <div class="footer-links" style="display: flex;justify-content: center;align-items: center;">
                 <a href="https://www.viistorrr.com/" style="text-decoration: none;margin: 8px;color: #9CA3AF;">www.viistorrr.com</a>
                 <a href="https://github.com/viistorrr" style="text-decoration: none;margin: 8px;color: #9CA3AF;">GitHub</a>
                 <a href="https://www.instagram.com/viistorrr/" style="text-decoration: none;margin: 8px;color: #9CA3AF;">Instagram</a>
                 <a href="https://www.linkedin.com/in/viistorrr/" style="text-decoration: none;margin: 8px;color: #9CA3AF;">LinkedIn</a>
                 <a href="https://twitter.com/viistorrr" style="text-decoration: none;margin: 8px;color: #9CA3AF;">Twitter</a>
+                <a href="https://open.spotify.com/playlist/02A9TTFAZf6k1lpTDalR1K?si=5ff4c83f0ab344c9" style="text-decoration: none;margin: 8px;color: #9CA3AF;">Spotify Playlist</a>
               </div>
               </div>
              
