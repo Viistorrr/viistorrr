@@ -3,6 +3,8 @@ import sendgrid from "@sendgrid/mail";
 sendgrid.setApiKey(process.env.SENDGRID_API_KEY);
 
 async function sendEmail(req, res) {
+  console.log("req.body)", req.body);
+  console.log("res", res);
   try {
     await sendgrid.send({
       to: `${req.body.email}`, // Your email where you'll receive emails

@@ -19,7 +19,7 @@ export const sendContactForm = async ({
       sentAt: Timestamp.now().toDate(),
     });
 
-    const res = await fetch("/api/sendgrid", {
+    const res = await fetch("api/sendgrid", {
       body: JSON.stringify({
         email: email,
         fullname: name,
@@ -34,13 +34,13 @@ export const sendContactForm = async ({
 
     const { error } = await res.json();
     if (error) {
-      console.log(error);
+      console.log("error", error);
       return;
     }
 
     return 0;
   } catch (err) {
-    console.log(err);
+    console.log("err", err);
     return -1;
   }
 };
