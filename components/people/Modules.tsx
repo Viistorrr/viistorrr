@@ -1,9 +1,12 @@
-import { Fragment } from "react";
+import { firestore } from "../../firebaseConfig";
+import { useEffect, useState } from "react";
+import { collection, query, orderBy, onSnapshot } from "firebase/firestore";
 import { CheckIcon, HandIcon, UserIcon } from "@heroicons/react/solid";
+
 const timeline = [
   {
     id: 1,
-    content: "Applied to",
+    content: "NextJS",
     target: "Front End Developer",
     href: "#",
     date: "Sep 20",
@@ -13,27 +16,47 @@ const timeline = [
   },
   {
     id: 2,
-    content: "Advanced to phone screening by",
+    content: "ReactJS",
+    target: "Front End Developer",
+    href: "#",
+    date: "Sep 20",
+    datetime: "2020-09-20",
+    icon: UserIcon,
+    iconBackground: "bg-gray-400",
+  },
+  {
+    id: 3,
+    content: "Javascript",
     target: "Bethany Blake",
     href: "#",
     date: "Sep 22",
     datetime: "2020-09-22",
     icon: HandIcon,
-    iconBackground: "bg-blue-500",
+    iconBackground: "bg-gray-500",
   },
   {
-    id: 3,
-    content: "Completed phone screening with",
+    id: 4,
+    content: "TailwindCSS",
     target: "Martha Gardner",
     href: "#",
     date: "Sep 28",
     datetime: "2020-09-28",
     icon: CheckIcon,
-    iconBackground: "bg-green-500",
+    iconBackground: "bg-gray-500",
   },
   {
-    id: 4,
-    content: "Advanced to interview by",
+    id: 5,
+    content: "CSS3",
+    target: "Martha Gardner",
+    href: "#",
+    date: "Sep 28",
+    datetime: "2020-09-28",
+    icon: CheckIcon,
+    iconBackground: "bg-gray-500",
+  },
+  {
+    id: 6,
+    content: "HTML5",
     target: "Bethany Blake",
     href: "#",
     date: "Sep 30",
@@ -42,7 +65,7 @@ const timeline = [
     iconBackground: "bg-blue-500",
   },
   {
-    id: 5,
+    id: 7,
     content: "Gestión Efectiva del Tiempo",
     target: "Katherine Snyder",
     href: "#",
@@ -53,61 +76,85 @@ const timeline = [
   },
 ];
 
-function classNames(...classes) {
+function classNames(...classes: any) {
   return classes.filter(Boolean).join(" ");
 }
 
 const Modules = (): JSX.Element => {
+  const [modules, setModules] = useState([]);
+  useEffect(() => {
+    const q = query(collection(firestore, "modules"), orderBy("order", "asc"));
+    onSnapshot(q, (querySnapshot) => {
+      setModules(
+        querySnapshot.docs.map((doc) => ({ id: doc.id, data: doc.data() }))
+      );
+    });
+  }, []);
+
   return (
-    <div className="grid text-start">
-      <h1 className="py-8">Módulos</h1>
-      <div className="flex justify-content items-center">
-        <div className="flow-root">
-          <ul role="list" className="">
-            {timeline.map((event, eventIdx) => (
-              <li key={event.id}>
-                <div className="relative pb-8">
-                  {eventIdx !== timeline.length - 1 ? (
-                    <span
-                      className="absolute top-4 left-4 -ml-px h-full w-0.5 bg-gray-200"
-                      aria-hidden="true"
-                    />
-                  ) : null}
-                  <div className="relative flex space-x-3">
-                    <div>
+    <div className="relative mx-auto max-w-xl w-full">
+      <div className="grid text-start">
+        <h1 className="py-8">Módulos</h1>
+        <div className="flex justify-content items-center">
+          <div className="flow-root">
+            <ul role="list" className="">
+              {modules.map((event) => (
+                <li key={event.id}>
+                  <div className="relative pb-8">
+                    {event.id !== modules.length - 1 ? (
                       <span
-                        className={classNames(
-                          event.iconBackground,
-                          "h-8 w-8 rounded-full flex items-center justify-center ring-8 ring-white"
-                        )}
-                      >
-                        <event.icon
-                          className="h-5 w-5 text-white"
-                          aria-hidden="true"
-                        />
-                      </span>
-                    </div>
-                    <div className="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                        className="absolute top-4 left-4 -ml-px h-full w-0.5 bg-gray-200"
+                        aria-hidden="true"
+                      />
+                    ) : null}
+                    <div className="relative flex space-x-3">
                       <div>
-                        <p className="text-sm text-gray-500">
-                          {event.content}{" "}
-                          <a
-                            href={event.href}
-                            className="font-medium text-gray-900"
-                          >
-                            {event.target}
-                          </a>
-                        </p>
+                        <span
+                          className={
+                            "bg-gray-400 h-8 w-8 rounded-full flex items-center justify-center ring-8 ring-white"
+                          }
+                        >
+                          <HandIcon
+                            className="h-5 w-5 text-white"
+                            aria-hidden="true"
+                          />
+                        </span>
                       </div>
-                      <div className="whitespace-nowrap text-right text-sm text-gray-500">
-                        <time dateTime={event.datetime}>{event.date}</time>
+                      <div className="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+                        <div>
+                          <p className="text-sm text-gray-500">
+                            <a
+                              href={event.data.name}
+                              className="font-medium text-gray-900"
+                            >
+                              {event.data.order} . {event.data.name}
+                            </a>
+                          </p>
+                          <div>
+                            {event.data.actividades.map((actividad) => (
+                              <p
+                                key={actividad}
+                                className="text-sm text-gray-500"
+                              >
+                                {actividad}
+                              </p>
+                            ))}
+                            Reto final
+                          </div>
+                        </div>
+
+                        <div className="whitespace-nowrap text-right text-sm text-gray-500">
+                          <time dateTime={event.data.name}>
+                            {event.data.name}
+                          </time>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </li>
-            ))}
-          </ul>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
     </div>
