@@ -3,6 +3,11 @@ import { useEffect, useState } from "react";
 import { collection, query, orderBy, onSnapshot } from "firebase/firestore";
 import { CheckIcon, HandIcon, UserIcon } from "@heroicons/react/solid";
 
+/**
+ * TODO: Get correct data fromfirebase to get a single user data
+ * Currently geeting an object instead an array. Must be fixed
+ */
+
 const timeline = [
   {
     id: 1,
