@@ -1,7 +1,15 @@
-import { firestore } from "../../firebaseConfig";
+import "firebase/firestore";
 import { useEffect, useState } from "react";
-import { collection, query, orderBy, onSnapshot } from "firebase/firestore";
+import {
+  collection,
+  query,
+  orderBy,
+  onSnapshot,
+  getDoc,
+  doc,
+} from "firebase/firestore";
 import { CheckIcon, HandIcon, UserIcon } from "@heroicons/react/solid";
+import { firestore } from "../../firebaseConfig";
 
 /**
  * TODO: Get correct data fromfirebase to get a single user data
@@ -87,6 +95,7 @@ function classNames(...classes: any) {
 
 const Modules = (): JSX.Element => {
   const [modules, setModules] = useState([]);
+  const [userData, setUserData] = useState([]);
   useEffect(() => {
     const q = query(collection(firestore, "modules"), orderBy("order", "asc"));
     onSnapshot(q, (querySnapshot) => {
@@ -95,6 +104,21 @@ const Modules = (): JSX.Element => {
       );
     });
   }, []);
+
+  useEffect(() => {
+    const getUser = async () => {
+      const docRef = doc(firestore, "contact", "C4vgKNKCayMU1kZcIJjP");
+      const docSnap = await getDoc(docRef);
+      if (docSnap.exists()) {
+        setUserData(docSnap.data());
+      } else {
+        // doc.data() will be undefined in this case
+        console.log("No such document!");
+      }
+    };
+    getUser();
+  }, []);
+  console.log({ userData });
 
   return (
     <div className="relative mx-auto max-w-xl w-full">
@@ -106,7 +130,7 @@ const Modules = (): JSX.Element => {
               {modules.map((event) => (
                 <li key={event.id}>
                   <div className="relative pb-8">
-                    {event.id !== modules.length - 1 ? (
+                    {event.id !== timeline.length - 1 ? (
                       <span
                         className="absolute top-4 left-4 -ml-px h-full w-0.5 bg-gray-200"
                         aria-hidden="true"
@@ -136,12 +160,13 @@ const Modules = (): JSX.Element => {
                             </a>
                           </p>
                           <div>
-                            {event.data.actividades.map((actividad) => (
-                              <p
-                                key={actividad}
-                                className="text-sm text-gray-500"
-                              >
-                                {actividad}
+                            {event.data.actividades.map((actividad, index) => (
+                              <p key={index} className="text-sm text-gray-500">
+                                {actividad.name ? actividad.name : "No indica"}{" "}
+                                -{" "}
+                                {actividad.completed
+                                  ? "Completado"
+                                  : "Pendiente"}
                               </p>
                             ))}
                             Reto final
@@ -149,9 +174,7 @@ const Modules = (): JSX.Element => {
                         </div>
 
                         <div className="whitespace-nowrap text-right text-sm text-gray-500">
-                          <time dateTime={event.data.name}>
-                            {event.data.name}
-                          </time>
+                          <time dateTime="Sep 22, 2022">Sep 22, 2022</time>
                         </div>
                       </div>
                     </div>
