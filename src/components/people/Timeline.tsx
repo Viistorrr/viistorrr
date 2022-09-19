@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import { useEffect, useState } from "react";
 import { collection, query, orderBy, onSnapshot } from "firebase/firestore";
-import { firestore } from "../../firebaseConfig";
+import { firestore } from "../../../firebaseConfig";
 import {
   ChartSquareBarIcon,
   TagIcon,

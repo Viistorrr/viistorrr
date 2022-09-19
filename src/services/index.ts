@@ -1,5 +1,5 @@
 import { addDoc, collection, Timestamp } from "firebase/firestore";
-import { firestore } from "../firebaseConfig";
+import { firestore } from "../../firebaseConfig";
 
 export const sendContactForm = async ({
   name,

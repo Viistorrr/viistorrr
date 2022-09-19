@@ -9,7 +9,7 @@ import {
   doc,
 } from "firebase/firestore";
 import { CheckIcon, HandIcon, UserIcon } from "@heroicons/react/solid";
-import { firestore } from "../../firebaseConfig";
+import { firestore } from "../../../firebaseConfig";
 
 /**
  * TODO: Get correct data fromfirebase to get a single user data
