@@ -106,8 +106,8 @@ const Timeline = (): JSX.Element => {
                                   href={activityItem.person.href}
                                   className="font-medium text-gray-900"
                                 >
-                                  {userData?.name}
-                                  {userData?.email}
+                                  {/* {userData?.name}
+                                  {userData?.email} */}
                                 </a>
                               </div>
                               <p className="mt-0.5 text-sm text-gray-500">
