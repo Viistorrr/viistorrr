@@ -1,16 +1,5 @@
 import Layout from "../components/Layout";
 
-//SSR implementation
-export async function getServerSideProps() {
-  const res = await fetch("https://jsonplaceholder.typicode.com/todos");
-  const data = await res.json();
-  return {
-    props: {
-      todos: data,
-    },
-  };
-}
-
 const Home = ({ todos }) => {
   return (
     <Layout>
