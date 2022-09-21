@@ -9,7 +9,7 @@ export const sendContactForm = async ({
   comment,
 }) => {
   try {
-    const ref = collection(firestore, "contact");
+    const ref = collection(firestore, "mentorship");
     await addDoc(ref, {
       name,
       profession,
