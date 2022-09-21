@@ -1,7 +1,6 @@
 import Link from "next/link";
-import Layout from "../../../components/Layout";
-import { LinkIcon } from "@heroicons/react/solid";
 import Image from "next/image";
+import Layout from "@components/Layout";
 
 const Intro = () => {
   return (
