@@ -9,7 +9,7 @@ const Intro = () => {
       <div className="relative w-full bg-white py-16">
         <div className="mx-auto max-w-7xl bg-sky-50 lg:bg-transparent lg:px-8">
           <div className="lg:grid lg:grid-cols-12">
-            <div className="relative z-1 lg:col-span-4 lg:col-start-1 lg:row-start-1 lg:bg-transparent lg:py-16">
+            <div className="relative z-1 lg:z-10 lg:col-span-4 lg:col-start-1 lg:row-start-1 lg:bg-transparent lg:py-16">
               <div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:max-w-none lg:p-0">
                 <div className="aspect-w-10 py-6 aspect-h-6 sm:aspect-w-2 sm:aspect-h-1 lg:aspect-w-1">
                   <Image
@@ -18,7 +18,7 @@ const Intro = () => {
                     objectFit="cover"
                     className="rounded-3xl object-cover object-center shadow-2xl"
                     src="/assets/imgs/webdevpath/intro.jpg"
-                    alt=""
+                    alt="viistorrr programming"
                   />
                 </div>
               </div>
