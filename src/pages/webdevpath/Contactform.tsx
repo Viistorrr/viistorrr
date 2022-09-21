@@ -96,7 +96,7 @@ export default function ContactForm() {
                   <div className="mt-5 sm:mt-6">
                     <button
                       type="button"
-                      className="inline-flex w-full justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:text-sm"
+                      className="inline-flex w-full justify-center rounded-md border border-transparent bg-sky-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 sm:text-sm"
                       onClick={() => setOpenModalMessage(false)}
                     >
                       <i>Allá Nospi !</i> 😁✌🏾
@@ -206,7 +206,7 @@ export default function ContactForm() {
                   name="fullname"
                   id="fullname"
                   autoComplete="given-name"
-                  className="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 uppercase"
+                  className="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-sky-500 focus:ring-sky-500 uppercase"
                 />
               </div>
             </div>
@@ -224,7 +224,7 @@ export default function ContactForm() {
                   name="profession"
                   id="profession"
                   autoComplete="profession"
-                  className="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                  className="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-sky-500 focus:ring-sky-500"
                 />
               </div>
             </div>
@@ -242,7 +242,7 @@ export default function ContactForm() {
                   name="email"
                   type="email"
                   autoComplete="email"
-                  className="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                  className="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-sky-500 focus:ring-sky-500"
                 />
               </div>
             </div>
@@ -260,7 +260,7 @@ export default function ContactForm() {
                   name="phone-number"
                   id="phone-number"
                   autoComplete="tel"
-                  className="block w-full rounded-md border-gray-300 py-3 px-4 focus:border-indigo-500 focus:ring-indigo-500"
+                  className="block w-full rounded-md border-gray-300 py-3 px-4 focus:border-sky-500 focus:ring-sky-500"
                   placeholder="+57 (300) 987-6543"
                 />
               </div>
@@ -280,7 +280,7 @@ export default function ContactForm() {
                   id="message"
                   name="message"
                   rows={4}
-                  className="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+                  className="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-sky-500 focus:ring-sky-500"
                   defaultValue={""}
                 />
               </div>
@@ -292,8 +292,8 @@ export default function ContactForm() {
                     checked={agreed}
                     onChange={setAgreed}
                     className={classNames(
-                      agreed ? "bg-indigo-600" : "bg-gray-200",
-                      "relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                      agreed ? "bg-sky-600" : "bg-gray-200",
+                      "relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2"
                     )}
                   >
                     <span className="sr-only">Agree to policies</span>
@@ -324,7 +324,7 @@ export default function ContactForm() {
             <div className="sm:col-span-2">
               <button
                 type="submit"
-                className="inline-flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                className="inline-flex w-full items-center justify-center rounded-md border border-transparent bg-sky-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2"
               >
                 Enviar
               </button>

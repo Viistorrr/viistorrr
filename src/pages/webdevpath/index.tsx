@@ -10,7 +10,7 @@ const WebDevPath = () => {
           <div className="text-center italic">
             <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
               <span className="block xl:inline">hola...</span>{" "}
-              <span className="block text-indigo-600 xl:inline">
+              <span className="block text-sky-800 xl:inline">
                 bienvenido! 👋
               </span>
             </h1>
