@@ -8,9 +8,15 @@ const Layout = ({ children }) => {
     <>
       <Head>
         <title>viistorrr - Software Engineer - IT Consultant</title>
-        <meta name="description" content="Software Engineer - IT Consultant" />
-        <meta name="keywords" content="Software Engineer, IT Consultant" />
-        <meta name="author" content="Software Engineer - IT Consultant" />
+        <meta name="description" content="frontend | dev | Software Engineer" />
+        <meta
+          name="keywords"
+          content="frontend, dev, Software Engineer, IT Consultant, js, typescript, html5, css3, developer, javascript, tsx, tailwind"
+        />
+        <meta
+          name="author"
+          content="Victor Meza | frontend | dev |Software Engineer"
+        />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
