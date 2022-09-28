@@ -3,7 +3,7 @@ import Script from "next/script";
 
 export default function Document() {
   return (
-    <Html className="h-full bg-gray-50 antialiased" lang="en">
+    <Html className="h-full antialiased" lang="en">
       <Head>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-8XLJF2LSLS"
