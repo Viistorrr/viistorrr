@@ -28,12 +28,12 @@ async function sendEmail(req, res) {
               <h5>Gracias por tu interés en la mentoría para convertirte en Desarrollador Frontend con ReactJS y NextJS, acá podés agendar 📆 para conocernos 👇🏾</h5>
               <a href="https://www.appointfix.com/book/viistorrr" target="_blank" style="text-decoration: none; color: #fff; background-color: #000; padding: 10px 20px; border-radius: 5px; font-size: 16px; font-weight: 600;">Agenda tu Intro📆</a>
               <div style="font-size: 16px;">
-              <p>Estas mentorías no tienen ningún costo, si en cualquier momento consideras que te sirven los conceptos que te he enseñado, me podés invitar un cafecito que yo te lo recibo ☕️ en el siguiente link: </p>
+              <p>Estas mentorías no tienen ningún costo, si en algún momento consideras te sirven los conceptos vistos y quisieras hacer un aporte voluntario, me podés invitar un cafecito que yo te lo recibo ☕️ en el siguiente link: </p>
                 <a href="https://www.buymeacoffee.com/viistorrr" target="_blank" style="text-decoration: none; color: #fff;background-color: #804000; padding: 10px 20px; border-radius: 5px; font-size: 16px; font-weight: 600;">Un cafecito para viis ☕️</a>
               Gracias!!! 😁✌🏾
               </p>
               </div>
-              <p class="footer" style="font-size: 16px;padding-bottom: 20px;border-bottom: 1px solid #D1D5DB;">Saludos<br>Víctor Meza<br>SR Frontend Dev - IT Consultant</p>
+              <p class="footer" style="font-size: 16px;padding-bottom: 20px;border-bottom: 1px solid #D1D5DB;">Saludos<br>Víctor Meza<br>💻| frontend | dev |IT Consultant</p>
               <div class="footer-links" style="display: flex;justify-content: center;align-items: center;">
                 <a href="https://www.viistorrr.com/" style="text-decoration: none;margin: 8px;color: #9CA3AF;">www.viistorrr.com</a>
                 <a href="https://github.com/viistorrr" style="text-decoration: none;margin: 8px;color: #9CA3AF;">GitHub</a>
