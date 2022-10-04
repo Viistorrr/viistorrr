@@ -5,14 +5,14 @@ import { MenuIcon, XIcon } from "@heroicons/react/outline";
 
 const navigation = [
   { name: "Inicio", href: "/", target: "" },
-  /*  { name: "Experiencia", href: "/experience", target: "" },
-  { name: "👨🏾‍💻 Yo te enseño", href: "/webdevpath", target: "" },
-  { name: "viiiiis App", href: "/viiiiis", target: "" },
+  //{ name: "Experiencia", href: "/experience", target: "" },
+  { name: "👨🏾‍💻 Aprende a programar conmigo", href: "/webdevpath", target: "" },
+  //{ name: "viiiiis App", href: "/viiiiis", target: "" },
   {
     name: "☕ Buy me a coffee",
     href: "https://www.buymeacoffee.com/viistorrr",
     target: "_blank",
-  }, */
+  },
 ];
 
 const Header = () => {
