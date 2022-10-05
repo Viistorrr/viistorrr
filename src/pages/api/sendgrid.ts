@@ -26,7 +26,7 @@ async function sendEmail(req, res) {
               <h4> 📤 integrar un servicio para envío de correos electrónicos como éste lo podrás aprender en ésta carrera.</h4>
               <h3>Hola ${req.body.fullname.toUpperCase()} :) Bienvenido!</h3>
               <h5>Gracias por tu interés en la mentoría para convertirte en Desarrollador Frontend con ReactJS y NextJS, acá podés agendar 📆 para conocernos 👇🏾</h5>
-              <a href="https://www.appointfix.com/book/viistorrr" target="_blank" style="text-decoration: none; color: #fff; background-color: #000; padding: 10px 20px; border-radius: 5px; font-size: 16px; font-weight: 600;">Agenda tu Intro📆</a>
+              <a href="https://calendly.com/viistorrr/30minsoneonone" target="_blank" style="text-decoration: none; color: #fff; background-color: #000; padding: 10px 20px; border-radius: 5px; font-size: 16px; font-weight: 600;">Agenda tu Intro📆</a>
               <div style="font-size: 16px;">
               <p>Estas mentorías no tienen ningún costo, si en algún momento consideras te sirven los conceptos vistos y quisieras hacer un aporte voluntario, me podés invitar un cafecito que yo te lo recibo ☕️ en el siguiente link: </p>
                 <a href="https://www.buymeacoffee.com/viistorrr" target="_blank" style="text-decoration: none; color: #fff;background-color: #804000; padding: 10px 20px; border-radius: 5px; font-size: 16px; font-weight: 600;">Un cafecito para viis ☕️</a>
