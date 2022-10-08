@@ -17,6 +17,11 @@ export default function Document() {
             gtag('config', 'G-8XLJF2LSLS');
             `}
         </Script>
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3769837006415356"
+          crossOrigin="anonymous"
+        ></Script>
       </Head>
       <body>
         <Main />
