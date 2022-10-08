@@ -1,7 +1,7 @@
 import Head from "next/head";
-import React from "react";
 import Footer from "./Footer";
 import Header from "./Header";
+import Script from "next/script";
 
 const Layout = ({ children }) => {
   return (
@@ -19,6 +19,11 @@ const Layout = ({ children }) => {
         />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link rel="icon" href="/favicon.ico" />
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3769837006415356"
+          crossOrigin="anonymous"
+        ></script>
       </Head>
       <div className="relative pt-6 pb-16 sm:pb-24">
         <Header />
