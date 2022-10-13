@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
       </Head>
       <div className="relative pt-6 pb-16 sm:pb-24">
         <Header />
-        <div className="flex overflow-hidden bg-white py-8 px-4 sm:px-2 lg:px-4 lg:py-6">
+        <div className="flex overflow-hidden bg-white py-8 px-4 sm:px-2 lg:px-4 lg:py-6 justify-center">
           {children}
         </div>
         <Footer />

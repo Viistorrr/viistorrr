@@ -1,5 +1,5 @@
 import { addDoc, collection, Timestamp } from "firebase/firestore";
-import { firestore } from "../../firebaseConfig";
+import { db } from "../config/firebase";
 
 export const sendContactForm = async ({
   name,
@@ -9,7 +9,7 @@ export const sendContactForm = async ({
   comment,
 }) => {
   try {
-    const ref = collection(firestore, "mentorship");
+    const ref = collection(db, "mentorship");
     await addDoc(ref, {
       name,
       profession,

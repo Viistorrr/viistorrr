@@ -1,195 +1,112 @@
-import { Fragment } from "react";
-import { useEffect, useState } from "react";
-import { collection, query, orderBy, onSnapshot } from "firebase/firestore";
-import { firestore } from "../../../firebaseConfig";
 import {
-  ChartSquareBarIcon,
-  TagIcon,
-  UserCircleIcon,
+  CheckIcon,
+  UserIcon,
+  CodeIcon,
+  ClockIcon,
+  ArrowUpIcon,
 } from "@heroicons/react/solid";
-import { doc, getDoc } from "firebase/firestore";
 
-const activity = [
-  {
-    id: 1,
-    type: "comment",
-    person: { name: "Eduardo Benz", href: "#" },
-    imageUrl:
-      "https://images.unsplash.com/photo-1520785643438-5bf77931f493?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=256&h=256&q=80",
-    comment: "Lectura de qué es tailwindcss y cómo funciona.",
-    date: "6d ago",
-  },
-  {
-    id: 2,
-    type: "assignment",
-    person: { name: "Hilary Mahy", href: "#" },
-    assigned: { name: "Kristin Watson", href: "#" },
-    date: "2d ago",
-  },
-  {
-    id: 3,
-    type: "tags",
-    person: { name: "Hilary Mahy", href: "#" },
-    tags: [
-      { name: "Bug", href: "#", color: "bg-rose-500" },
-      { name: "Accessibility", href: "#", color: "bg-indigo-500" },
-    ],
-    date: "6h ago",
-  },
-  {
-    id: 4,
-    type: "comment",
-    person: { name: "Jason Meyers", href: "#" },
-    imageUrl:
-      "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=256&h=256&q=80",
-    comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt nunc ipsum tempor purus vitae id. Morbi in vestibulum nec varius. Et diam cursus quis sed purus nam. Scelerisque amet elit non sit ut tincidunt condimentum. Nisl ultrices eu venenatis diam.",
-    date: "2h ago",
-  },
-];
+import Link from "next/link";
 
-function classNames(...classes) {
+function classNames(...classes: any) {
   return classes.filter(Boolean).join(" ");
 }
 
-const Timeline = (): JSX.Element => {
-  const [userData, setUserData] = useState({});
-  useEffect(() => {
-    getDocument();
-  }, []);
-
-  const getDocument = async () => {
-    const docRef = doc(firestore, "contact", "MwnYIVXGWK1PwMyO0E5P");
-    const docSnap = await getDoc(docRef);
-    setUserData(docSnap.data());
-  };
-
-  console.log(userData);
-
+const Timeline = ({ mentoring }): JSX.Element => {
   return (
-    <div className="relative mx-auto max-w-xl w-full">
-      <div className="grid text-start">
-        <h1 className="py-8">Timeline</h1>
-        <div className="flex justify-content items-center">
-          <div className="flow-root">
-            <ul role="list" className="-mb-8">
-              {activity.map((activityItem, activityItemIdx) => (
-                <li key={activityItem.id}>
-                  <div className="relative pb-8">
-                    {activityItemIdx !== activity.length - 1 ? (
-                      <span
-                        className="absolute top-5 left-5 -ml-px h-full w-0.5 bg-gray-200"
-                        aria-hidden="true"
-                      />
-                    ) : null}
-                    <div className="relative flex items-start space-x-3">
-                      {activityItem.type === "comment" ? (
-                        <>
-                          <div className="relative">
-                            <img
-                              className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-400 ring-8 ring-white"
-                              src={activityItem.imageUrl}
-                              alt=""
-                            />
-
-                            <span className="absolute -bottom-0.5 -right-1 rounded-tl bg-white px-0.5 py-px">
-                              <ChartSquareBarIcon
-                                className="h-5 w-5 text-gray-400"
-                                aria-hidden="true"
+    <div className="flow-root mx-8">
+      <ul role="list" className="-mb-8">
+        {mentoring?.steps?.map((item: any, eventIdx: number) => (
+          <li key={item.name}>
+            <div className="relative pb-8">
+              {eventIdx !== mentoring.length - 1 ? (
+                <span
+                  className="absolute top-4 left-4 -ml-px h-full w-0.5 bg-gray-200"
+                  aria-hidden="true"
+                />
+              ) : null}
+              <div className="relative flex space-x-3">
+                <div>
+                  {item?.completed ? (
+                    <span
+                      className={classNames(
+                        "bg-green-400",
+                        "h-8 w-8 rounded-full flex items-center justify-center ring-8 ring-white"
+                      )}
+                    >
+                      {item?.reto ? (
+                        <CodeIcon
+                          className="h-5 w-5 text-white"
+                          aria-hidden="true"
+                        />
+                      ) : (
+                        <CheckIcon
+                          className="h-5 w-5 text-white"
+                          aria-hidden="true"
+                        />
+                      )}
+                    </span>
+                  ) : (
+                    <span
+                      className={classNames(
+                        "bg-gray-400",
+                        "h-8 w-8 rounded-full flex items-center justify-center ring-8 ring-white"
+                      )}
+                    >
+                      {item?.reto ? (
+                        <CodeIcon
+                          className="h-5 w-5 text-white"
+                          aria-hidden="true"
+                        />
+                      ) : (
+                        <ClockIcon
+                          className="h-5 w-5 text-white"
+                          aria-hidden="true"
+                        />
+                      )}
+                    </span>
+                  )}
+                </div>
+                <div className="flex space-x-3 w-full">
+                  <div className="flex-1 space-y-1">
+                    <div className="flex items-center justify-between">
+                      <h3 className="text-sm font-medium">{item.name}</h3>
+                      <div className="w-4 h-4 mx-2">
+                        <Link href={item.link}>
+                          <a
+                            target="_blank"
+                            className="font-medium text-sky-600 hover:text-sky-500"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              strokeWidth={1.5}
+                              stroke="currentColor"
+                              className="w-6 h-6"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
                               />
-                            </span>
-                          </div>
-                          <div className="min-w-0 flex-1">
-                            <div>
-                              <div className="text-sm">
-                                <a
-                                  href={activityItem.person.href}
-                                  className="font-medium text-gray-900"
-                                >
-                                  {/* {userData?.name}
-                                  {userData?.email} */}
-                                </a>
-                              </div>
-                              <p className="mt-0.5 text-sm text-gray-500">
-                                Pendientes {activityItem.date}
-                              </p>
-                            </div>
-                            <div className="mt-2 text-sm text-gray-700">
-                              <p>{activityItem.comment}</p>
-                            </div>
-                          </div>
-                        </>
-                      ) : activityItem.type === "assignment" ? (
-                        <>
-                          <div>
-                            <div className="relative px-1">
-                              <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gray-100 ring-8 ring-white">
-                                <UserCircleIcon
-                                  className="h-5 w-5 text-gray-500"
-                                  aria-hidden="true"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                          <div className="min-w-0 flex-1 py-1.5">
-                            <div className="text-sm text-gray-500">
-                              <a
-                                href={activityItem.person.href}
-                                className="font-medium text-gray-900"
-                              >
-                                {activityItem.person.name}
-                              </a>{" "}
-                              assigned{" "}
-                              <a
-                                href={activityItem.assigned.href}
-                                className="font-medium text-gray-900"
-                              >
-                                {activityItem.assigned.name}
-                              </a>{" "}
-                              <span className="whitespace-nowrap">
-                                {activityItem.date}
-                              </span>
-                            </div>
-                          </div>
-                        </>
-                      ) : activityItem.type === "tags" ? (
-                        <>
-                          <div>
-                            <div className="relative px-1">
-                              <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gray-100 ring-8 ring-white">
-                                <TagIcon
-                                  className="h-5 w-5 text-gray-500"
-                                  aria-hidden="true"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                          <div className="min-w-0 flex-1 py-0">
-                            <div className="text-sm leading-8 text-gray-500">
-                              <span className="mr-0.5">
-                                <a
-                                  href={activityItem.person.href}
-                                  className="font-medium text-gray-900"
-                                >
-                                  {activityItem.person.name}
-                                </a>{" "}
-                                added tags
-                              </span>{" "}
-                              <span className="whitespace-nowrap">
-                                {activityItem.date}
-                              </span>
-                            </div>
-                          </div>
-                        </>
-                      ) : null}
+                            </svg>
+                          </a>
+                        </Link>
+                      </div>
                     </div>
+                    <p className="text-sm text-gray-500">{item.module}</p>
                   </div>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </div>
+
+                  {/* <div className="whitespace-nowrap text-right text-sm text-gray-500">
+                    <time dateTime={item.name}> - {item.module}</time>
+                  </div> */}
+                </div>
+              </div>
+            </div>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };
