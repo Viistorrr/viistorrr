@@ -9,7 +9,7 @@ import {
   doc,
 } from "firebase/firestore";
 import { CheckIcon, HandIcon, UserIcon } from "@heroicons/react/solid";
-import { firestore } from "../../config/firebase";
+import { db } from "@config/firebase";
 
 /**
  * TODO: Get correct data fromfirebase to get a single user data
@@ -97,7 +97,7 @@ const Modules = (): JSX.Element => {
   const [modules, setModules] = useState([]);
   const [userData, setUserData] = useState([]);
   useEffect(() => {
-    const q = query(collection(firestore, "modules"), orderBy("order", "asc"));
+    const q = query(collection(db, "modules"), orderBy("order", "asc"));
     onSnapshot(q, (querySnapshot) => {
       setModules(
         querySnapshot.docs.map((doc) => ({ id: doc.id, data: doc.data() }))
@@ -107,7 +107,7 @@ const Modules = (): JSX.Element => {
 
   useEffect(() => {
     const getUser = async () => {
-      const docRef = doc(firestore, "contact", "C4vgKNKCayMU1kZcIJjP");
+      const docRef = doc(db, "mentorship", "YSqsBSEAVn136VkfwEoK");
       const docSnap = await getDoc(docRef);
       if (docSnap.exists()) {
         //setUserData(docSnap.data());

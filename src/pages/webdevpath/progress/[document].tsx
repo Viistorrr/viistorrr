@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { doc, getDoc } from "firebase/firestore";
 import Layout from "../../../components/Layout";
 import Timeline from "../../../components/people/Timeline";
+import Modules from "@components/people/Modules";
 
 /**
  TODO: Fix getServersideProps to get Mentoring data from firestore
