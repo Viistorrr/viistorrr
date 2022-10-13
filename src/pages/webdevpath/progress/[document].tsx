@@ -4,8 +4,9 @@ import { useMentorshipContext } from "@context/MentorshipContext";
 import { useEffect, useState } from "react";
 import { doc, getDoc } from "firebase/firestore";
 import Layout from "../../../components/Layout";
-import Timeline from "../../../components/people/Timeline";
-import Modules from "@components/people/Modules";
+import Timeline from "../../../components/progress/Timeline";
+import Modules from "@components/progress/Modules";
+import HeadInfo from "@components/progress/HeadInfo";
 
 /**
  TODO: Fix getServersideProps to get Mentoring data from firestore
@@ -42,8 +43,11 @@ const Progress: NextPage = () => {
   return (
     <>
       <Layout>
-        {mentoring && <Timeline mentoring={mentoring} />}
-        {/* <Modules /> */}
+        <div className="flex flex-col">
+          {mentoring && <HeadInfo mentoring={mentoring} />}
+          {mentoring && <Timeline mentoring={mentoring} />}
+          {/* <Modules /> */}
+        </div>
       </Layout>
     </>
   );
