@@ -10,7 +10,11 @@ const HeadInfo = ({ mentoring }: any) => {
               <div className="ml-4">
                 <h3 className="text-lg font-medium leading-6 text-gray-900">
                   {mentoring?.name?.toUpperCase()}
+                  <span className="inline-flex items-center rounded-full bg-sky-100 px-4 mx-2 py-0.5 text-sm font-medium text-sky-800">
+                    BETA
+                  </span>
                 </h3>
+
                 <p className="text-sm text-gray-500">{mentoring?.email}</p>
                 <p className="text-sm text-gray-500">{mentoring?.profession}</p>
               </div>

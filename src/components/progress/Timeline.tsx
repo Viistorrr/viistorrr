@@ -1,12 +1,5 @@
-import {
-  CheckIcon,
-  UserIcon,
-  CodeIcon,
-  ClockIcon,
-  ArrowUpIcon,
-} from "@heroicons/react/solid";
-
 import Link from "next/link";
+import { CheckIcon, CodeIcon, ClockIcon } from "@heroicons/react/solid";
 
 function classNames(...classes: any) {
   return classes.filter(Boolean).join(" ");
