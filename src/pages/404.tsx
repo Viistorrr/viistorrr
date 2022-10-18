@@ -11,10 +11,10 @@ const Custom404 = () => {
           </a>
         </div>
         <div className="py-16">
-          <div className="text-center">
+          <div className="flex flex-col text-center">
             <p className="text-base font-semibold text-primary">404</p>
             <h1 className="mt-2 text-4xl font-bold tracking-tight text-primary sm:text-5xl">
-              En construcción...
+              En construcción... 😁✌🏾
             </h1>
             <p className="mt-2 text-base text-gray-500">
               Sorry, ya estoy trabajando en ésta sección.
@@ -22,7 +22,7 @@ const Custom404 = () => {
             <div className="mt-6">
               <Link href="/">
                 <a className="text-base font-medium text-gray-700 hover:text-primary">
-                  Inicio
+                  Volver
                   <span aria-hidden="true"> &rarr;</span>
                 </a>
               </Link>
