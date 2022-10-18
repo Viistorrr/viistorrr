@@ -5,7 +5,15 @@ module.exports = {
     "src/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      textColor: {
+        primary: "#075985",
+        secondary: "#6b7280",
+      },
+      fontFamily: {
+        monserrat: ["Montserrat", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 };
