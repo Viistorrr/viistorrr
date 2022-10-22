@@ -20,7 +20,7 @@ const Timeline = ({ mentoring }): JSX.Element => {
               ) : null}
               <div className="relative flex space-x-3">
                 <div>
-                  {item?.completed ? (
+                  {item?.completed === "si" ? (
                     <span
                       className={classNames(
                         "bg-green-400",
