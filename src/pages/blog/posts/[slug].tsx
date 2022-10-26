@@ -1,10 +1,11 @@
 import BlogLayout from "@components/bloglayout/BlogLayout";
+import { VImage } from "@components/image/vImage";
 import Head from "next/head";
+import Image from "next/image";
 import Link from "next/link";
 
-//import TopButton from '../../../components/TopButton';
-
 export default function Post({ devDotToPost }) {
+  console.log({ devDotToPost });
   const {
     title,
     published_at,
@@ -30,17 +31,17 @@ export default function Post({ devDotToPost }) {
         <meta property="og:url" content={canonical_url} />
       </Head>
       <div className="flex justify-center">
-        {/* <TopButton /> */}
         <article className="text-xs w-full md:w-3/4 ">
           <div className="border-2 text-black bg-white md:rounded-lg overflow-hidden">
-            <img className="w-full" src={social_image} alt={title} />
+            <VImage src={social_image} alt={title} width={500} height={300} />
             <div className="p-4 md:p-32">
               <h1>{title}</h1>
               <div className="flex items-center text-gray-600">
-                <img
-                  className="rounded-full w-12"
+                <VImage
                   src={user.profile_image_90}
                   alt={user.name}
+                  width={100}
+                  height={100}
                 />
                 <span className="mx-4">{user.name}</span>
                 <span className="text-sm">23/10/2022</span>
@@ -64,7 +65,7 @@ export default function Post({ devDotToPost }) {
               >
                 <path d="M19 12H5M12 19l-7-7 7-7" />
               </svg>
-              Back
+              Volver
             </a>
           </Link>
         </article>
