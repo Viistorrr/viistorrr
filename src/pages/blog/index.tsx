@@ -1,6 +1,14 @@
-import { VImage } from "@components/image/vImage";
-import Layout from "@components/Layout";
 import Link from "next/link";
+import { VImage } from "@components/image/VImage";
+import Layout from "@components/Layout";
+
+const Tags = (tags) => {
+  return tags.tags.map((tag) => (
+    <strong key={tag} className="text-xs text-primary">
+      #{tag}{" "}
+    </strong>
+  ));
+};
 
 const Blog = ({ devDotToPosts }) => {
   return (
@@ -22,10 +30,8 @@ const Blog = ({ devDotToPosts }) => {
                       height={200}
                     />
                     <div className="p-4">
-                      <h3 className="text-gray-700 font-medium text-lg">
-                        {post.title}
-                      </h3>
-                      <p className="text-gray-600 text-sm mt-1">
+                      <Tags tags={post.tag_list} />
+                      <p className="text-secondary text-sm mt-1">
                         {post.description}
                       </p>
                     </div>

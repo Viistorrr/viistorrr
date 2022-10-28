@@ -1,5 +1,5 @@
 import BlogLayout from "@components/bloglayout/BlogLayout";
-import { VImage } from "@components/image/vImage";
+import { VImage } from "@components/image/VImage";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
