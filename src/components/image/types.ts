@@ -3,4 +3,5 @@ export type VImageProps = {
   alt: string;
   width: number | string;
   height: number | string;
+  className?: string;
 };

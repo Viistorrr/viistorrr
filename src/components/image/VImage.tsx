@@ -5,7 +5,7 @@ const vCustomLoader = ({ src, width, quality }) => {
   return `${src}?w=${width}&q=${quality || 75}`;
 };
 
-export const VImage = ({ src, alt, width, height }: VImageProps) => {
+export const VImage = ({ src, alt, width, height, className }: VImageProps) => {
   return (
     <Image
       loader={vCustomLoader}
@@ -13,7 +13,7 @@ export const VImage = ({ src, alt, width, height }: VImageProps) => {
       alt={alt}
       width={width}
       height={height}
-      layout="responsive"
+      className={className}
     />
   );
 };
