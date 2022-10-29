@@ -46,7 +46,7 @@ const Blog = ({ devDotToPosts }) => {
 
 export const getServerSideProps = async () => {
   const devDotToPosts = await fetch(
-    `https://dev.to/api/articles?username=${process.env.DEV_USERNAME}`
+    `https://dev.to/api/articles?username=viistorrr`
   );
 
   const res = await devDotToPosts.json();
