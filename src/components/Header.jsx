@@ -8,7 +8,7 @@ const navigation = [
   { name: "Experiencia", href: "/experience", target: "" },
   { name: "👨🏾‍💻 Mentorship", href: "/webdevpath", target: "" },
   //{ name: "viiiiis App", href: "/viiiiis", target: "" },
-  { name: "Blog", href: "blog", target: "" },
+  { name: "Blog", href: "/blog", target: "" },
   {
     name: "☕ Buy me a coffee",
     href: "https://www.buymeacoffee.com/viistorrr",

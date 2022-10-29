@@ -36,7 +36,7 @@ export const MentorshipContextProvider = ({
     setTimeout(() => {
       setLoading(false);
     }, 2000);
-  }, []);
+  });
 
   const getMentoring = async () => {
     const querySnapshot = await getDocs(queryMentoring);
