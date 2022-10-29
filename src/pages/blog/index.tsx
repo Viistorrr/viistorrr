@@ -15,31 +15,29 @@ const Blog = ({ devDotToPosts }) => {
     <Layout>
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap -mx-4">
-          {devDotToPosts.map((post) => (
-            <div className="w-full md:w-1/2 lg:w-1/3 px-4 mb-8" key={post.id}>
-              <Link
-                prefetch={true}
-                href={`/blog/posts/${encodeURIComponent(post.slug)}`}
-              >
-                <a>
-                  <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <VImage
-                      src={post.social_image}
-                      alt={post.title}
-                      width={500}
-                      height={200}
-                    />
-                    <div className="p-4">
-                      <Tags tags={post.tag_list} />
-                      <p className="text-secondary text-sm mt-1">
-                        {post.description}
-                      </p>
+          {devDotToPosts &&
+            devDotToPosts.map((post) => (
+              <div className="w-full md:w-1/2 lg:w-1/3 px-4 mb-8" key={post.id}>
+                <Link href={`/blog/posts/${encodeURIComponent(post.slug)}`}>
+                  <a>
+                    <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+                      <VImage
+                        src={post.social_image}
+                        alt={post.title}
+                        width={500}
+                        height={200}
+                      />
+                      <div className="p-4">
+                        <Tags tags={post.tag_list} />
+                        <p className="text-secondary text-sm mt-1">
+                          {post.description}
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                </a>
-              </Link>
-            </div>
-          ))}
+                  </a>
+                </Link>
+              </div>
+            ))}
         </div>
       </div>
     </Layout>

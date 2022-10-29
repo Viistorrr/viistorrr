@@ -14,6 +14,7 @@ export const VImage = ({ src, alt, width, height, className }: VImageProps) => {
       width={width}
       height={height}
       className={className}
+      priority
     />
   );
 };
