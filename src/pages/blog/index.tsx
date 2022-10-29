@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { VImage } from "@components/image/VImage";
 import Layout from "@components/Layout";
+import { VImage } from "@components/image/VImage";
 
 const Tags = (tags) => {
   return tags.tags.map((tag) => (

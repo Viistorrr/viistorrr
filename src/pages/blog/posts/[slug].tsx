@@ -74,19 +74,6 @@ export default function Post({ devDotToPost }) {
   );
 }
 
-export const getStaticProps = async ({ params }) => {
-  const devDotToPost = await fetch(
-    `https://dev.to/api/articles/${process.env.DEV_USERNAME}/${params.slug}`
-  );
-  const res = await devDotToPost.json();
-
-  return {
-    props: {
-      devDotToPost: res,
-    },
-  };
-};
-
 export async function getStaticPaths() {
   const devDotToPosts = await fetch(
     `https://dev.to/api/articles?username=${process.env.DEV_USERNAME}`
@@ -104,3 +91,16 @@ export async function getStaticPaths() {
     fallback: false,
   };
 }
+
+export const getStaticProps = async ({ params }) => {
+  const devDotToPost = await fetch(
+    `https://dev.to/api/articles/${process.env.DEV_USERNAME}/${params.slug}`
+  );
+  const res = await devDotToPost.json();
+
+  return {
+    props: {
+      devDotToPost: res,
+    },
+  };
+};
