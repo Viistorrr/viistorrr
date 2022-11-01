@@ -21,18 +21,6 @@ export default function Post({ devDotToPost }) {
     parseInt(date.getMonth(), 10) + 1
   }/${date.getFullYear()}`; */
 
-  const router = useRouter();
-  console.log(router);
-
-  const [posts, setPosts] = useState([]);
-  const url = `https://dev.to/api/articles?username=viistorrr`;
-
-  useEffect(() => {
-    fetch(url)
-      .then((res) => res.json())
-      .then((data) => setPosts(data));
-  }, []);
-
   return (
     <Layout>
       <Head>

@@ -19,6 +19,7 @@ const Blog = ({ devDotToPosts }) => {
     fetch(url)
       .then((res) => res.json())
       .then((data) => setPosts(data));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
