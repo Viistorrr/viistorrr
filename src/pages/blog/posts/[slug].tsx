@@ -1,10 +1,11 @@
+import { useEffect, useState } from "react";
 import Head from "next/head";
 import Link from "next/link";
 import { VImage } from "@components/image/VImage";
 import Layout from "@components/Layout";
+import Router, { useRouter } from "next/router";
 
 export default function Post({ devDotToPost }) {
-  console.log({ devDotToPost });
   const {
     title,
     published_at,
@@ -19,6 +20,18 @@ export default function Post({ devDotToPost }) {
   /* const formatedDate = `${date.getDate()}/${
     parseInt(date.getMonth(), 10) + 1
   }/${date.getFullYear()}`; */
+
+  const router = useRouter();
+  console.log(router);
+
+  const [posts, setPosts] = useState([]);
+  const url = `https://dev.to/api/articles?username=viistorrr`;
+
+  useEffect(() => {
+    fetch(url)
+      .then((res) => res.json())
+      .then((data) => setPosts(data));
+  }, []);
 
   return (
     <Layout>
@@ -76,7 +89,7 @@ export default function Post({ devDotToPost }) {
 
 export async function getStaticPaths() {
   const devDotToPosts = await fetch(
-    `https://dev.to/api/articles?username=${process.env.DEV_USERNAME}`
+    `https://dev.to/api/articles?username=viistorrr`
   );
   const posts = await devDotToPosts.json();
 
@@ -88,7 +101,7 @@ export async function getStaticPaths() {
         },
       };
     }),
-    fallback: false,
+    fallback: true,
   };
 }
 
