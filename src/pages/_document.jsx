@@ -5,7 +5,7 @@ export default function Document() {
   return (
     <Html className="h-full antialiased" lang="en">
       <Head>
-        <meta name="description" content="frontend | dev | Software Engineer" />
+        {/* <meta name="description" content="frontend | dev | Software Engineer" />
         <meta
           name="keywords"
           content="frontend, dev, Software Engineer, IT Consultant, js, typescript, html5, css3, developer, javascript, tsx, tailwind"
@@ -33,7 +33,37 @@ export default function Document() {
         <meta
           name="twitter:title"
           content="Victor Meza | frontend | dev |Software Engineer"
-        ></meta>
+        /> */}
+
+        <meta
+          name="description"
+          content="frontend, dev, Software Engineer, IT Consultant, js, typescript, html5, css3, developer, javascript, tsx, tailwind"
+        />
+        <meta property="og:url" content="https://www.viistorrr.com" />
+        <meta property="og:type" content="website" />
+
+        <meta
+          property="og:description"
+          content="frontend, dev, Software Engineer, IT Consultant, js, typescript, html5, css3, developer, javascript, tsx, tailwind"
+        />
+        <meta
+          property="og:image"
+          content="https://www.viistorrr.com/assets/imgs/webdevpath/working.jpg"
+        />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="viistorrr.com" />
+        <meta property="twitter:url" content="https://www.viistorrr.com" />
+        <meta name="twitter:title" content="viistorrr.com" />
+        <meta
+          name="twitter:description"
+          content="frontend, dev, Software Engineer, IT Consultant, js, typescript, html5, css3, developer, javascript, tsx, tailwind"
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.viistorrr.com/assets/imgs/webdevpath/working.jpg"
+        />
+
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-8XLJF2LSLS"
           strategy="afterInteractive"
