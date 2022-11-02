@@ -25,15 +25,6 @@ export default function Post({ devDotToPost }) {
 
   return (
     <Layout>
-      <Head>
-        {/* <meta key="blogpost" property="og:type" content={type_of} />
-        <meta key="blogpost" property="og:url" content={canonical_url} />
-        <meta key="blogpost" name="twitter:site" content="@viistorrr" />
-        <meta key="blogpost" name="twitter:creator" content="@viistorrr" />
-        <meta key="blogpost" property="twitter:title" content={title} />
-        <meta key="blogpost" name="twitter:description" content={description} />
-        <meta key="blogpost" name="twitter:image" content={social_image} /> */}
-      </Head>
       <NextSeo
         title={title}
         description={description}
