@@ -11,8 +11,18 @@ const Tags = (tags) => {
   ));
 };
 
+const categories = [
+  {
+    name: "productividad",
+  },
+  {
+    name: "programming",
+  },
+];
+
 const Blog = ({ devDotToPosts }) => {
   const [posts, setPosts] = useState([]);
+  //console.log({ categories });
   const url = `https://dev.to/api/articles?username=viistorrr`;
 
   useEffect(() => {
@@ -21,6 +31,14 @@ const Blog = ({ devDotToPosts }) => {
       .then((data) => setPosts(data));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+  /* //console.log(posts);
+  posts
+    ? posts.map((post) =>
+        post.tags.includes("programming")
+          ? console.log(post)
+          : "no incluye programming"
+      )
+    : "no hay posts"; */
 
   return (
     <Layout>
@@ -39,6 +57,9 @@ const Blog = ({ devDotToPosts }) => {
                         height={200}
                       />
                       <div className="p-4">
+                        <h3 className="text-xl font-bold text-primary">
+                          {post.title}
+                        </h3>
                         <Tags tags={post.tag_list} />
                         <p className="text-secondary text-sm mt-1">
                           {post.description}
