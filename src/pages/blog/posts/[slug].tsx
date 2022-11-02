@@ -26,21 +26,23 @@ export default function Post({ devDotToPost }) {
   return (
     <Layout>
       <Head>
-        <meta key="blogpost" property="og:type" content={type_of} />
+        {/* <meta key="blogpost" property="og:type" content={type_of} />
         <meta key="blogpost" property="og:url" content={canonical_url} />
-
         <meta key="blogpost" name="twitter:site" content="@viistorrr" />
         <meta key="blogpost" name="twitter:creator" content="@viistorrr" />
         <meta key="blogpost" property="twitter:title" content={title} />
         <meta key="blogpost" name="twitter:description" content={description} />
-        <meta key="blogpost" name="twitter:image" content={social_image} />
+        <meta key="blogpost" name="twitter:image" content={social_image} /> */}
       </Head>
-      {/* <NextSeo
+      <NextSeo
         title={title}
         description={description}
-        canonical={canonical_url}
+        canonical={canonical_url.replace(
+          "https://dev.to/viistorrr/",
+          "https://www.viistorrr.com/blog/posts/"
+        )}
         openGraph={{
-          url: canonical_url,
+          url: "https://www.viistorrr.com/blog",
           title: title,
           description: description,
           images: [
@@ -59,7 +61,7 @@ export default function Post({ devDotToPost }) {
           site: "@site",
           cardType: "summary_large_image",
         }}
-      /> */}
+      />
       <div className="flex justify-center">
         <article className="text-lg w-full md:w-3/4 text-justify">
           <div className="my-12 border-2 text-secondary bg-white md:rounded-lg overflow-hidden">
