@@ -25,14 +25,14 @@ export default function Post({ devDotToPost }) {
 
   return (
     <Layout>
-      {/* <Head>
+      <Head>
         <meta property="og:type" content={type_of} />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:image" content={social_image} />
         <meta property="og:url" content={canonical_url} />
-      </Head> */}
-      <NextSeo
+      </Head>
+      {/* <NextSeo
         title={title}
         description={description}
         canonical={canonical_url}
@@ -56,7 +56,7 @@ export default function Post({ devDotToPost }) {
           site: "@site",
           cardType: "summary_large_image",
         }}
-      />
+      /> */}
       <div className="flex justify-center">
         <article className="text-lg w-full md:w-3/4 text-justify">
           <div className="my-12 border-2 text-secondary bg-white md:rounded-lg overflow-hidden">

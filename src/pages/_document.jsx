@@ -17,10 +17,7 @@ export default function Document() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link rel="icon" href="/favicon.ico" />
         <meta property="og:url" content="https://www.viistorrr.com" />
-        <meta
-          property="og:title"
-          content="frontend, dev, Software Engineer, IT Consultant"
-        />
+
         <meta
           property="og:description"
           content="frontend, dev, Software Engineer, IT Consultant, js, typescript, html5, css3, developer, javascript, tsx, tailwind"
