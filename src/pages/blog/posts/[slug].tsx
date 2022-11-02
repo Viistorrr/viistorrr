@@ -61,7 +61,10 @@ export default function Post({ devDotToPost }) {
         }}
         twitter={{
           handle: "@viistorrr",
-          site: "www.viistorrr.com",
+          site: canonical_url.replace(
+            "https://dev.to/viistorrr/",
+            "https://www.viistorrr.com/blog/posts/"
+          ),
           cardType: "summary_large_image",
         }}
       />
