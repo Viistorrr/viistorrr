@@ -5,6 +5,34 @@ export default function Document() {
   return (
     <Html className="h-full antialiased" lang="en">
       <Head>
+        <meta name="description" content="frontend | dev | Software Engineer" />
+        <meta
+          name="keywords"
+          content="frontend, dev, Software Engineer, IT Consultant, js, typescript, html5, css3, developer, javascript, tsx, tailwind"
+        />
+        <meta
+          name="author"
+          content="Victor Meza | frontend | dev |Software Engineer"
+        />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link rel="icon" href="/favicon.ico" />
+        <meta property="og:url" content="https://www.viistorrr.com" />
+        <meta
+          property="og:title"
+          content="frontend, dev, Software Engineer, IT Consultant"
+        />
+        <meta
+          property="og:description"
+          content="frontend, dev, Software Engineer, IT Consultant"
+        />
+        <meta
+          property="og:image"
+          content="https://www.viistorrr.com/assets/imgs/webdevpath/working.jpg"
+        />
+        <meta property="og:site_name" content="viistorrr" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@site" />
+        <meta name="twitter:creator" content="@handle" />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-8XLJF2LSLS"
           strategy="afterInteractive"
