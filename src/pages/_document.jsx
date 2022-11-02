@@ -39,6 +39,7 @@ export default function Document() {
           name="description"
           content="frontend, dev, Software Engineer, IT Consultant, js, typescript, html5, css3, developer, javascript, tsx, tailwind"
         />
+        <meta property="og:title" content="viistorrr.com"></meta>
         <meta property="og:url" content="https://www.viistorrr.com" />
         <meta property="og:type" content="website" />
 
