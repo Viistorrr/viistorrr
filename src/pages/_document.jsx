@@ -7,7 +7,7 @@ export default function Document() {
       <Head>
         <meta
           name="description"
-          content="Víctor Meza | frontend, dev, Software Engineer, IT Consultant, js, typescript, html5, css3, developer, javascript, tsx, tailwind"
+          content="Víctor Meza | frontend, dev, Software Engineer, IT Consultant"
         />
         <meta property="og:title" content="viistorrr.com"></meta>
         <meta property="og:url" content="https://www.viistorrr.com" />
@@ -23,9 +23,9 @@ export default function Document() {
         />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta property="twitter:domain" content="viistorrr.com" />
+        <meta property="twitter:domain" content="www.viistorrr.com" />
         <meta property="twitter:url" content="https://www.viistorrr.com" />
-        <meta name="twitter:title" content="viistorrr.com" />
+        <meta name="twitter:title" content="https://www.viistorrr.com" />
         <meta
           name="twitter:description"
           content="Víctor Meza | frontend, dev, Software Engineer"
