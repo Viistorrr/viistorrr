@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { NextSeo } from "next-seo";
 import Head from "next/head";
 import Link from "next/link";
 import { VImage } from "@components/image/VImage";
@@ -15,6 +16,7 @@ export default function Post({ devDotToPost }) {
     type_of,
     description,
     canonical_url,
+    path,
   } = devDotToPost;
   const date = new Date(published_at);
   /* const formatedDate = `${date.getDate()}/${
@@ -23,13 +25,38 @@ export default function Post({ devDotToPost }) {
 
   return (
     <Layout>
-      <Head>
+      {/* <Head>
         <meta property="og:type" content={type_of} />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:image" content={social_image} />
         <meta property="og:url" content={canonical_url} />
-      </Head>
+      </Head> */}
+      <NextSeo
+        title={title}
+        description={description}
+        canonical={canonical_url}
+        openGraph={{
+          url: `https://www.viistorrr.com/${path}`,
+          title: title,
+          description: description,
+          images: [
+            {
+              url: social_image,
+              width: 800,
+              height: 600,
+              alt: title,
+              type: "image/jpeg",
+            },
+          ],
+          site_name: "viistorrr.com",
+        }}
+        twitter={{
+          handle: "@handle",
+          site: "@site",
+          cardType: "summary_large_image",
+        }}
+      />
       <div className="flex justify-center">
         <article className="text-lg w-full md:w-3/4 text-justify">
           <div className="my-12 border-2 text-secondary bg-white md:rounded-lg overflow-hidden">
