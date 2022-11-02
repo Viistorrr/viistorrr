@@ -37,7 +37,7 @@ export default function Post({ devDotToPost }) {
         description={description}
         canonical={canonical_url}
         openGraph={{
-          url: `https://www.viistorrr.com/${path}`,
+          url: canonical_url,
           title: title,
           description: description,
           images: [
