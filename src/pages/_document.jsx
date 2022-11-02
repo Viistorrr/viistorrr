@@ -23,7 +23,7 @@ export default function Document() {
         />
         <meta
           property="og:description"
-          content="frontend, dev, Software Engineer, IT Consultant"
+          content="frontend, dev, Software Engineer, IT Consultant, js, typescript, html5, css3, developer, javascript, tsx, tailwind"
         />
         <meta
           property="og:image"
