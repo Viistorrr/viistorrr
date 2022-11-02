@@ -25,6 +25,18 @@ export default function Post({ devDotToPost }) {
 
   return (
     <Layout>
+      <Head>
+        <meta property="twitter:url" content="https://www.viistorrr.com" />
+        <meta name="twitter:title" content={title} />
+        <meta
+          name="twitter:description"
+          content="Víctor Meza | frontend, dev, Software Engineer"
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.viistorrr.com/assets/imgs/webdevpath/working.jpg"
+        />
+      </Head>
       <NextSeo
         title={title}
         description={description}
@@ -48,8 +60,8 @@ export default function Post({ devDotToPost }) {
           site_name: "viistorrr.com",
         }}
         twitter={{
-          handle: "@handle",
-          site: "@site",
+          handle: "@viistorrr",
+          site: "www.viistorrr.com",
           cardType: "summary_large_image",
         }}
       />
