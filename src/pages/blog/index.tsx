@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import Layout from "@components/Layout";
 import { VImage } from "@components/image/VImage";
+import Head from "next/head";
 
 const Tags = (tags) => {
   return tags.tags.map((tag) => (
@@ -42,6 +43,22 @@ const Blog = ({ devDotToPosts }) => {
 
   return (
     <Layout>
+      <Head>
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:description"
+          content="frontend, dev, Software Engineer, IT Consultant, js, typescript, html5, css3, developer, javascript, tsx, tailwind"
+        />
+        <meta
+          property="og:image"
+          content="https://www.viistorrr.com/assets/imgs/webdevpath/working.jpg"
+        />
+        <meta property="og:url" content="https://www.viistorrr.com/blog" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="viistorrr.com" />
+        <meta property="twitter:url" content="https://www.viistorrr.com/blog" />
+        <meta name="twitter:title" content="vBlog" />
+      </Head>
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap -mx-4">
           {posts &&
