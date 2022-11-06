@@ -23,9 +23,8 @@ const categories = [
   },
 ];
 
-const Blog = ({ posts }) => {
-  /* const [posts, setPosts] = useState([]);
-  //console.log({ categories });
+const Blog = () => {
+  const [posts, setPosts] = useState([]);
   const url = `https://dev.to/api/articles?username=${process.env.NEXT_PUBLIC_DEVTO_USERNAME}&per_page=100`;
 
   useEffect(() => {
@@ -33,7 +32,7 @@ const Blog = ({ posts }) => {
       .then((res) => res.json())
       .then((data) => setPosts(data));
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []); */
+  }, []);
 
   return (
     <Layout>
@@ -74,7 +73,7 @@ const Blog = ({ posts }) => {
   );
 };
 
-export const getServerSideProps = async () => {
+/* export const getServerSideProps = async () => {
   const posts = await fetch(
     `https://dev.to/api/articles?username=${process.env.NEXT_PUBLIC_DEVTO_USERNAME}`
   );
@@ -87,6 +86,6 @@ export const getServerSideProps = async () => {
       url: `https://dev.to/api/articles?username=${process.env.NEXT_PUBLIC_DEVTO_USERNAME}`,
     },
   };
-};
+}; */
 
 export default Blog;
