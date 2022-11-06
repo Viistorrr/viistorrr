@@ -6,7 +6,6 @@ import Layout from "@components/Layout";
 import md from "markdown-it";
 
 export default function Post({ post }) {
-  console.log(post);
   const {
     title,
     published_at,
@@ -29,10 +28,7 @@ export default function Post({ post }) {
         <meta property="twitter:url" content="https://www.viistorrr.com" />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
-        <meta
-          name="twitter:image"
-          content="https://www.viistorrr.com/assets/imgs/webdevpath/working.jpg"
-        />
+        <meta name="twitter:image" content={social_image} />
         <meta property="og:description" content={description} />
       </Head>
       <NextSeo
@@ -43,7 +39,7 @@ export default function Post({ post }) {
           "https://www.viistorrr.com/blog/posts/"
         )}
         openGraph={{
-          url: `https://www.viistorrr.com/blog/posts/${path}`,
+          url: `https://www.viistorrr.com/blog/posts${path}`,
           title: title,
           description: description,
           images: [
@@ -61,7 +57,7 @@ export default function Post({ post }) {
           handle: "@viistorrr",
           site: canonical_url.replace(
             "https://dev.to/viistorrr/",
-            `https://www.viistorrr.com/blog/posts/${path}`
+            `https://www.viistorrr.com/blog/posts${path}`
           ),
           cardType: "summary_large_image",
         }}
