@@ -42,7 +42,7 @@ const Progress: NextPage = () => {
 
   return (
     <>
-      <Layout>
+      <Layout pageTitle="Tu progreso">
         <div className="flex flex-col">
           {mentoring && <HeadInfo mentoring={mentoring} />}
           {mentoring && <Timeline mentoring={mentoring} />}

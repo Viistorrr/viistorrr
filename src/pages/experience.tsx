@@ -92,7 +92,7 @@ function classNames(...classes) {
 
 export default function Example() {
   return (
-    <Layout>
+    <Layout pageTitle="Experiencia">
       <div className="flow-root">
         <ul role="list" className="-mb-8">
           {timeline &&
