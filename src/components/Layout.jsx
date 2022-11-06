@@ -7,7 +7,7 @@ import { useRouter } from "next/router";
 const Layout = ({ children, pageTitle }) => {
   const router = useRouter();
   const { asPath } = router;
-  console.log(router);
+
   return (
     <>
       <Head>
