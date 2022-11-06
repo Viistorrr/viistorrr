@@ -4,7 +4,12 @@ import Header from "./Header";
 import Script from "next/script";
 import { useRouter } from "next/router";
 
-const Layout = ({ children, pageTitle }) => {
+type LayoutProps = {
+  children: React.ReactNode;
+  pageTitle?: string;
+};
+
+const Layout = ({ children, pageTitle }: LayoutProps) => {
   const router = useRouter();
   const { asPath } = router;
 
