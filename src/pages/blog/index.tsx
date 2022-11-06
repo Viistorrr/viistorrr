@@ -25,7 +25,7 @@ const Blog = ({ posts }) => {
   }, []); */
   console.log(posts);
   return (
-    <Layout>
+    <Layout pageTitle="Blog">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap -mx-4">
           {posts ? (

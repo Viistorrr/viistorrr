@@ -24,18 +24,16 @@ export default function Post({ post }) {
   }/${date.getFullYear()}`; */
 
   return (
-    <Layout>
+    <Layout pageTitle="Blog">
       <Head>
         <meta property="twitter:url" content="https://www.viistorrr.com" />
         <meta name="twitter:title" content={title} />
-        <meta
-          name="twitter:description"
-          content="Víctor Meza | frontend, dev, Software Engineer"
-        />
+        <meta name="twitter:description" content={description} />
         <meta
           name="twitter:image"
           content="https://www.viistorrr.com/assets/imgs/webdevpath/working.jpg"
         />
+        <meta property="og:description" content={description} />
       </Head>
       <NextSeo
         title={title}
