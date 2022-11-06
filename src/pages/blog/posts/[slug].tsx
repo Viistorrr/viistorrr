@@ -1,10 +1,9 @@
-import { useEffect, useState } from "react";
 import { NextSeo } from "next-seo";
 import Head from "next/head";
 import Link from "next/link";
 import { VImage } from "@components/image/VImage";
 import Layout from "@components/Layout";
-import Router, { useRouter } from "next/router";
+import md from "markdown-it";
 
 export default function Post({ devDotToPost }) {
   const {
@@ -115,7 +114,7 @@ export default function Post({ devDotToPost }) {
 
 export async function getStaticPaths() {
   const devDotToPosts = await fetch(
-    `https://dev.to/api/articles?username=viistorrr`
+    `https://dev.to/api/articles?username=${process.env.NEXT_PUBLIC_DEVTO_USERNAME}`
   );
   const posts = await devDotToPosts.json();
 
@@ -127,13 +126,13 @@ export async function getStaticPaths() {
         },
       };
     }),
-    fallback: true,
+    fallback: false,
   };
 }
 
 export const getStaticProps = async ({ params }) => {
   const devDotToPost = await fetch(
-    `https://dev.to/api/articles/${process.env.DEV_USERNAME}/${params.slug}`
+    `https://dev.to/api/articles/${process.env.NEXT_PUBLIC_DEVTO_USERNAME}/${params.slug}`
   );
   const res = await devDotToPost.json();
 

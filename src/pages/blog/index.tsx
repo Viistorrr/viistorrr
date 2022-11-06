@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-no-undef */
+/* eslint-disable react/jsx-no-comment-textnodes */
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Layout from "@components/Layout";
@@ -21,10 +23,10 @@ const categories = [
   },
 ];
 
-const Blog = ({ devDotToPosts }) => {
-  const [posts, setPosts] = useState([]);
+const Blog = ({ posts }) => {
+  /* const [posts, setPosts] = useState([]);
   //console.log({ categories });
-  const url = `https://dev.to/api/articles?username=viistorrr`;
+  const url = `https://dev.to/api/articles?username=${process.env.NEXT_PUBLIC_DEVTO_USERNAME}&per_page=100`;
 
   useEffect(() => {
     fetch(url)
@@ -32,20 +34,12 @@ const Blog = ({ devDotToPosts }) => {
       .then((data) => setPosts(data));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-  /* //console.log(posts);
-  posts
-    ? posts.map((post) =>
-        post.tags.includes("programming")
-          ? console.log(post)
-          : "no incluye programming"
-      )
-    : "no hay posts"; */
-
+  console.log(url); */
   return (
     <Layout>
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap -mx-4">
-          {posts &&
+          {posts ? (
             posts.map((post) => (
               <div className="w-full md:w-1/2 lg:w-1/3 px-4 mb-8" key={post.id}>
                 <Link href={`/blog/posts/${encodeURIComponent(post.slug)}`}>
@@ -70,26 +64,29 @@ const Blog = ({ devDotToPosts }) => {
                   </a>
                 </Link>
               </div>
-            ))}
+            ))
+          ) : (
+            <h1>No hay posts publicados</h1>
+          )}
         </div>
       </div>
     </Layout>
   );
 };
 
-/* export const getServerSideProps = async () => {
-  const devDotToPosts = await fetch(
-    `https://dev.to/api/articles?username=viistorrr`
+export const getServerSideProps = async () => {
+  const posts = await fetch(
+    `https://dev.to/api/articles?username=${process.env.NEXT_PUBLIC_DEVTO_USERNAME}`
   );
 
-  const res = await devDotToPosts.json();
+  const res = await posts.json();
 
   return {
     props: {
-      devDotToPosts: res,
-      url: `https://dev.to/api/articles?username=viistorrr`,
+      posts: res,
+      url: `https://dev.to/api/articles?username=${process.env.NEXT_PUBLIC_DEVTO_USERNAME}`,
     },
   };
-}; */
+};
 
 export default Blog;

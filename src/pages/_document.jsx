@@ -51,7 +51,7 @@ export default function Document() {
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3769837006415356"
           crossOrigin="anonymous"
-        ></Script>
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
           rel="stylesheet"
