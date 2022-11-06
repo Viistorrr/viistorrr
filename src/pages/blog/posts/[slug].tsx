@@ -5,7 +5,8 @@ import { VImage } from "@components/image/VImage";
 import Layout from "@components/Layout";
 import md from "markdown-it";
 
-export default function Post({ devDotToPost }) {
+export default function Post({ post }) {
+  console.log(post);
   const {
     title,
     published_at,
@@ -16,7 +17,7 @@ export default function Post({ devDotToPost }) {
     description,
     canonical_url,
     path,
-  } = devDotToPost;
+  } = post;
   const date = new Date(published_at);
   /* const formatedDate = `${date.getDate()}/${
     parseInt(date.getMonth(), 10) + 1
@@ -44,7 +45,7 @@ export default function Post({ devDotToPost }) {
           "https://www.viistorrr.com/blog/posts/"
         )}
         openGraph={{
-          url: "https://www.viistorrr.com/blog",
+          url: `https://www.viistorrr.com/blog/posts/${path}`,
           title: title,
           description: description,
           images: [
@@ -62,7 +63,7 @@ export default function Post({ devDotToPost }) {
           handle: "@viistorrr",
           site: canonical_url.replace(
             "https://dev.to/viistorrr/",
-            "https://www.viistorrr.com/blog/posts/"
+            `https://www.viistorrr.com/blog/posts/${path}`
           ),
           cardType: "summary_large_image",
         }}
@@ -114,7 +115,7 @@ export default function Post({ devDotToPost }) {
 
 export async function getStaticPaths() {
   const devDotToPosts = await fetch(
-    `https://dev.to/api/articles?username=${process.env.NEXT_PUBLIC_DEVTO_USERNAME}`
+    `https://dev.to/api/articles?username=${process.env.NEXT_PUBLIC_DEVTO_USERNAME}&per_page=100`
   );
   const posts = await devDotToPosts.json();
 
@@ -138,7 +139,7 @@ export const getStaticProps = async ({ params }) => {
 
   return {
     props: {
-      devDotToPost: res,
+      post: res,
     },
   };
 };

@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import Layout from "@components/Layout";
 import { VImage } from "@components/image/VImage";
-import Head from "next/head";
 
 const Tags = (tags) => {
   return tags.tags.map((tag) => (
@@ -14,26 +13,17 @@ const Tags = (tags) => {
   ));
 };
 
-const categories = [
-  {
-    name: "productividad",
-  },
-  {
-    name: "programming",
-  },
-];
-
-const Blog = () => {
-  const [posts, setPosts] = useState([]);
+const Blog = ({ posts }) => {
+  /* const [posts, setPosts] = useState([]);
   const url = `https://dev.to/api/articles?username=${process.env.NEXT_PUBLIC_DEVTO_USERNAME}&per_page=100`;
-
+  console.log(url);
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())
       .then((data) => setPosts(data));
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
+  }, []); */
+  console.log(posts);
   return (
     <Layout>
       <div className="container mx-auto px-4">
@@ -73,9 +63,9 @@ const Blog = () => {
   );
 };
 
-/* export const getServerSideProps = async () => {
+export const getServerSideProps = async () => {
   const posts = await fetch(
-    `https://dev.to/api/articles?username=${process.env.NEXT_PUBLIC_DEVTO_USERNAME}`
+    `https://dev.to/api/articles?username=${process.env.NEXT_PUBLIC_DEVTO_USERNAME}&per_page=100`
   );
 
   const res = await posts.json();
@@ -83,9 +73,8 @@ const Blog = () => {
   return {
     props: {
       posts: res,
-      url: `https://dev.to/api/articles?username=${process.env.NEXT_PUBLIC_DEVTO_USERNAME}`,
     },
   };
-}; */
+};
 
 export default Blog;
