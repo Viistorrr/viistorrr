@@ -25,7 +25,6 @@ export default function Post({ post }) {
   return (
     <Layout pageTitle="Blog">
       <Head>
-        <meta property="twitter:url" content="https://www.viistorrr.com" />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={social_image} />

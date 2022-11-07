@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import Layout from "@components/Layout";
 import { VImage } from "@components/image/VImage";
+import Head from "next/head";
 
 const Tags = (tags) => {
   return tags.tags.map((tag) => (
@@ -25,7 +26,25 @@ const Blog = ({ posts }) => {
   }, []); */
   console.log(posts);
   return (
-    <Layout pageTitle="Blog">
+    <Layout pageTitle="vBlog">
+      <Head>
+        <meta
+          name="twitter:image"
+          content="https://www.viistorrr.com/assets/imgs/webdevpath/working.jpg"
+        />
+        <meta
+          property="og:description"
+          content="vBlog | IT Posts | Víctor Meza "
+        />
+        <meta
+          name="twitter:description"
+          content="vBlog | IT Posts | Víctor Meza "
+        />
+        <meta
+          property="og:image"
+          content="https://www.viistorrr.com/assets/imgs/webdevpath/working.jpg"
+        />
+      </Head>
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap -mx-4">
           {posts ? (
