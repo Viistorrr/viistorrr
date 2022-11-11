@@ -4,8 +4,11 @@ import Link from "next/link";
 import { VImage } from "@components/image/VImage";
 import Layout from "@components/Layout";
 import md from "markdown-it";
+import ReactMarkdown from "react-markdown";
 
 export default function Post({ post }) {
+  console.log(post);
+
   const {
     title,
     published_at,
@@ -16,6 +19,7 @@ export default function Post({ post }) {
     description,
     canonical_url,
     path,
+    body_markdown,
   } = post;
   const date = new Date(published_at);
   /* const formatedDate = `${date.getDate()}/${
@@ -76,10 +80,7 @@ export default function Post({ post }) {
                 />
                 <span className="mx-4 font-bold">{user.name}</span>
               </div>
-              <div
-                className="markdown"
-                dangerouslySetInnerHTML={{ __html: body_html }}
-              />
+              <ReactMarkdown>{body_markdown}</ReactMarkdown>
             </div>
           </div>
           <div className="flex justify-center">
