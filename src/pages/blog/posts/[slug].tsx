@@ -107,7 +107,7 @@ export default function Post({ post }) {
   );
 }
 
-export async function getStaticPaths() {
+/* export async function getStaticPaths() {
   const devDotToPosts = await fetch(
     `https://dev.to/api/articles?username=${process.env.NEXT_PUBLIC_DEVTO_USERNAME}&per_page=100`
   );
@@ -136,4 +136,4 @@ export const getStaticProps = async ({ params }) => {
       post: res,
     },
   };
-};
+}; */
