@@ -50,7 +50,7 @@ const Blog = ({ posts }) => {
           {posts ? (
             posts.map((post) => (
               <div className="w-full md:w-1/2 lg:w-1/3 px-4 mb-8" key={post.id}>
-                <Link href={`/blog/posts/${encodeURIComponent(post.slug)}`}>
+                <Link href={post.canonical_url}>
                   <a>
                     <div className="bg-white rounded-lg shadow-lg overflow-hidden">
                       <VImage
