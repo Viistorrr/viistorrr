@@ -1,4 +1,4 @@
-import Head from "next/head";
+import { NextSeo } from "next-seo";
 import Layout from "@components/Layout";
 import MainList from "@components/concepts/MainList";
 import Details from "@components/concepts/Details";
@@ -6,65 +6,31 @@ import Details from "@components/concepts/Details";
 const Home = () => {
   return (
     <Layout pageTitle="vConcepts">
-      <Head>
-        <meta
-          key="og-url"
-          property="og:url"
-          content="https://www.viistorrr.com/concepts/"
-        />
-        <meta key="og-type" property="og:type" content="website" />
-        <meta
-          key="og-title"
-          property="og:title"
-          content="Shorts devs concepts descriptions"
-        />
-        <meta
-          key="og-desc"
-          property="og:description"
-          content="Shorts devs concepts descriptions"
-        />
-        <meta
-          key="og-img"
-          property="og:image"
-          content="https://www.viistorrr.com/assets/imgs/webdevpath/working.jpg"
-        />
-        <meta
-          key="tw-card"
-          property="twitter:card"
-          content="summary_large_image"
-        />
-        <meta
-          key="tw-domain"
-          property="twitter:domain"
-          content="viistorrr.com"
-        />
-        <meta key="tw-title" property="twitter:title" content="vConcepts" />
-        <meta
-          key="tw-site"
-          property="twitter:site"
-          content="https://www.viistorrr.com/concepts/"
-        />
-        <meta
-          key="tw-url"
-          property="twitter:url"
-          content="https://www.viistorrr.com/concepts/"
-        />
-        <meta
-          key="tw-creator"
-          property="twitter:creator"
-          content="@viistorrr"
-        />
-        <meta
-          key="tw-desc"
-          property="twitter:description"
-          content="Shorts devs concepts descriptions"
-        />
-        <meta
-          key="tw-img"
-          property="twitter:image"
-          content="https://www.viistorrr.com/assets/imgs/webdevpath/working.jpg"
-        />
-      </Head>
+      <NextSeo
+        title="vConcepts"
+        description="Shorts devs concepts descriptions"
+        canonical="https://www.viistorrr.com/concepts"
+        openGraph={{
+          url: "https://www.viistorrr.com",
+          title: "vConcepts",
+          description: "Shorts devs concepts descriptions",
+          images: [
+            {
+              url: "https://www.viistorrr.com/assets/imgs/webdevpath/working.jpg",
+              width: 800,
+              height: 600,
+              alt: "dev",
+              type: "image/jpeg",
+            },
+          ],
+          site_name: "Víctor Meza | frontend, dev, Software Engineer",
+        }}
+        twitter={{
+          handle: "@viistorrr",
+          site: "www.viistorrr.com",
+          cardType: "summary_large_image",
+        }}
+      />
       <div>
         <div className="flex justify-center py-4 my-4">
           <h1>
