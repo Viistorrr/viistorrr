@@ -22,16 +22,16 @@ const Home = () => {
           content="https://www.viistorrr.com/assets/imgs/webdevpath/working.jpg"
         />
 
-        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="www.viistorrr.com" />
         <meta property="twitter:url" content="https://www.viistorrr.com" />
-        <meta name="twitter:title" content="https://www.viistorrr.com" />
+        <meta property="twitter:title" content="https://www.viistorrr.com" />
         <meta
-          name="twitter:description"
+          property="twitter:description"
           content="Víctor Meza | frontend, dev, Software Engineer"
         />
         <meta
-          name="twitter:image"
+          property="twitter:image"
           content="https://www.viistorrr.com/assets/imgs/webdevpath/working.jpg"
         />
       </Head>
