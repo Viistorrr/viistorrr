@@ -3,7 +3,7 @@ import { CalendarIcon, ChevronRightIcon } from "@heroicons/react/solid";
 const positions = [
   {
     id: 1,
-    title: "¿Que es ReactJS?",
+    title: "Title Test",
     department: "frontend",
     closeDate: "2020-01-07",
     closeDateFull: "Dec 7, 2022",

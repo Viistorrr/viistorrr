@@ -28,13 +28,13 @@ const questions = [
     date: "December 7, 2022",
     datetime: "2020-12-09T11:43:00",
     href: "#",
-    title: "¿Que es ReactJS?",
+    title: "Title Test",
     body: `
-        <p>Es una librería open source de JavaScript para desarrollar interfaces de usuario. Fue lanzada en el año 2013 y desarrollada por Facebook, quienes también la mantienen actualmente junto a una comunidad de desarrolladores independientes y compañías.</p>
+        <p>Lorem ipsum description test will be placed here.</p>
 
-        <p>Hoy en día muchas empresas de primer nivel utilizan React para el desarrollo de sus aplicaciones, y es que entre ellas podemos encontrar Facebook, Instagram y el cliente web de WhastApp (todas propiedad de Facebook), y otras como AirBnb, Uber, Netflix, Twitter, Reddit o Paypal</p>
+        <p>Lorem ipsum with more description bla bla bla test</p>
         
-        <p>Desde su lanzamiento, su uso ha ido incrementando notablemente, convirtiéndose, a día de hoy, en una de las tecnologías front-end más utilizadas.</p>
+        <p>Lorem ipsum with more description bla bla bla testLorem ipsum with more description bla bla bla testLorem ipsum with more description bla bla bla testLorem ipsum with more description bla bla bla testLorem ipsum with more description bla bla bla testLorem ipsum with more description bla bla bla testLorem ipsum with more description bla bla bla test.</p>
         
       `,
   },
@@ -165,7 +165,7 @@ const Details = () => {
                 </div>
                 <h2
                   id={"question-title-" + question.id}
-                  className="mt-4 text-base font-medium text-gray-900"
+                  className="mt-4 text-base font-bold text-gray-900"
                 >
                   {question.title}
                 </h2>
