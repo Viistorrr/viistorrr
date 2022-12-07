@@ -1,34 +1,40 @@
 import Layout from "@components/Layout";
-import { NextSeo } from "next-seo";
+import Head from "next/head";
 
 const Home = () => {
   return (
     <Layout pageTitle="viistorrr | frontend | dev | Software Engineer">
-      <NextSeo
-        title="viistorrr | frontend | dev | Software Engineer"
-        description="Víctor Meza | frontend, dev, Software Engineer"
-        canonical="https://www.viistorrr.com"
-        openGraph={{
-          url: "https://www.viistorrr.com",
-          title: "Víctor Meza | frontend, dev, Software Engineer",
-          description: "Shorts devs concepts descriptions",
-          images: [
-            {
-              url: "https://www.viistorrr.com/assets/imgs/webdevpath/working.jpg",
-              width: 800,
-              height: 600,
-              alt: "dev",
-              type: "image/jpeg",
-            },
-          ],
-          site_name: "Víctor Meza | frontend, dev, Software Engineer",
-        }}
-        twitter={{
-          handle: "@viistorrr",
-          site: "www.viistorrr.com",
-          cardType: "summary_large_image",
-        }}
-      />
+      <Head>
+        <meta
+          name="description"
+          content="Víctor Meza | frontend, dev, Software Engineer, IT Consultant"
+        />
+        <meta property="og:title" content="viistorrr.com"></meta>
+        <meta property="og:url" content="https://www.viistorrr.com" />
+        <meta property="og:type" content="website" />
+
+        <meta
+          property="og:description"
+          content="Víctor Meza | frontend, dev, Software Engineer"
+        />
+        <meta
+          property="og:image"
+          content="https://www.viistorrr.com/assets/imgs/webdevpath/working.jpg"
+        />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="www.viistorrr.com" />
+        <meta property="twitter:url" content="https://www.viistorrr.com" />
+        <meta name="twitter:title" content="https://www.viistorrr.com" />
+        <meta
+          name="twitter:description"
+          content="Víctor Meza | frontend, dev, Software Engineer"
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.viistorrr.com/assets/imgs/webdevpath/working.jpg"
+        />
+      </Head>
       <main className="mt-16 mx-auto max-w-7xl px-4 sm:mt-24">
         <div className="text-center">
           <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">

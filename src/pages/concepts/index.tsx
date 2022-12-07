@@ -2,35 +2,45 @@ import { NextSeo } from "next-seo";
 import Layout from "@components/Layout";
 import MainList from "@components/concepts/MainList";
 import Details from "@components/concepts/Details";
+import Head from "next/head";
 
 const Home = () => {
   return (
     <Layout pageTitle="vConcepts">
-      <NextSeo
-        title="vConcepts"
-        description="Shorts devs concepts descriptions"
-        canonical="https://www.viistorrr.com/concepts"
-        openGraph={{
-          url: "https://www.viistorrr.com",
-          title: "vConcepts",
-          description: "Shorts devs concepts descriptions",
-          images: [
-            {
-              url: "https://www.viistorrr.com/assets/imgs/webdevpath/working.jpg",
-              width: 800,
-              height: 600,
-              alt: "dev",
-              type: "image/jpeg",
-            },
-          ],
-          site_name: "Víctor Meza | frontend, dev, Software Engineer",
-        }}
-        twitter={{
-          handle: "@viistorrr",
-          site: "www.viistorrr.com",
-          cardType: "summary_large_image",
-        }}
-      />
+      <Head>
+        <meta
+          name="description"
+          content="vConcepts | Shorts devs concepts descriptions"
+        />
+        <meta
+          property="og:title"
+          content="vConcepts | Shorts devs concepts descriptions"
+        ></meta>
+        <meta property="og:url" content="https://www.viistorrr.com/concepts" />
+        <meta property="og:type" content="website" />
+
+        <meta
+          property="og:description"
+          content="vConcepts | Shorts devs concepts descriptions"
+        />
+        <meta
+          property="og:image"
+          content="https://www.viistorrr.com/assets/imgs/webdevpath/working.jpg"
+        />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="www.viistorrr.com" />
+        <meta property="twitter:url" content="https://www.viistorrr.com" />
+        <meta name="twitter:title" content="vConcepts" />
+        <meta
+          name="twitter:description"
+          content="vConcepts | Shorts devs concepts descriptions"
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.viistorrr.com/assets/imgs/webdevpath/working.jpg"
+        />
+      </Head>
       <div>
         <div className="flex justify-center py-4 my-4">
           <h1>
