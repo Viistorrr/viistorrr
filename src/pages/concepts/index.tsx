@@ -5,7 +5,7 @@ import Details from "@components/concepts/Details";
 
 const Home = () => {
   return (
-    <Layout pageTitle="vFrontend Concepts">
+    <Layout pageTitle="vConcepts">
       <Head>
         <meta
           key="og-url"
@@ -34,11 +34,7 @@ const Home = () => {
           property="twitter:domain"
           content="viistorrr.com"
         />
-        <meta
-          key="tw-title"
-          name="twitter:title"
-          content="vFrontend Concepts"
-        />
+        <meta key="tw-title" name="twitter:title" content="vConcepts" />
         <meta
           key="tw-site"
           name="twitter:site"
