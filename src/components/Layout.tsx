@@ -2,6 +2,7 @@ import Head from "next/head";
 import Footer from "./Footer";
 import Header from "./Header";
 import { useRouter } from "next/router";
+import { NextSeo } from "next-seo";
 
 type LayoutProps = {
   children: React.ReactNode;
@@ -9,13 +10,30 @@ type LayoutProps = {
 };
 
 const Layout = ({ children, pageTitle }: LayoutProps) => {
-  /* const router = useRouter();
-  const { asPath } = router; */
+  const router = useRouter();
+  const { asPath } = router;
 
   return (
     <>
       <Head>
         <title>{pageTitle}</title>
+
+        <meta
+          name="description"
+          content="Víctor Meza | frontend, dev, Software Engineer, IT Consultant"
+        />
+        <meta property="og:title" content={pageTitle}></meta>
+        <meta
+          property="og:url"
+          content={`https://www.viistorrr.com${asPath}`}
+        />
+        <meta property="og:type" content="website" />
+
+        <meta
+          property="twitter:url"
+          content={`https://www.viistorrr.com${asPath}`}
+        />
+        <meta property="twitter:title" content={pageTitle} />
       </Head>
       <div className="relative pt-6 pb-16 sm:pb-24 font-monserrat">
         <Header />
