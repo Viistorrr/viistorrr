@@ -6,13 +6,10 @@ import { MenuIcon, XIcon } from "@heroicons/react/outline";
 const navigation = [
   { name: "Inicio", href: "/", target: "" },
   { name: "Experiencia", href: "/experience", target: "" },
-  { name: "👨🏾‍💻 Mentorship", href: "/webdevpath", target: "" },
-  {
-    name: "📖Frontend Concepts repo",
-    href: "https://vfrontend-concepts.vercel.app/",
-    target: "_blank",
-  },
+  { name: "📖vConcepts", href: "/concepts", target: "" },
+  { name: "vComponents Library", href: "/components-library", target: "" },
   { name: "Blog", href: "/blog", target: "" },
+  { name: "👨🏾‍💻 Mentorship", href: "/webdevpath", target: "" },
   {
     name: "☕ Buy me a coffee",
     href: "https://www.buymeacoffee.com/viistorrr",
@@ -48,7 +45,7 @@ const Header = () => {
                   <a
                     target={item.target}
                     key={item.name}
-                    className="font-medium text-gray-500 hover:text-gray-900"
+                    className="font-bold text-gray-500 hover:text-gray-900"
                   >
                     {item.name}
                   </a>
