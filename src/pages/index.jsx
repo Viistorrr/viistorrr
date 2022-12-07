@@ -10,7 +10,7 @@ const Home = () => {
         canonical="https://www.viistorrr.com"
         openGraph={{
           url: "https://www.viistorrr.com",
-          title: "vConcepts",
+          title: "Víctor Meza | frontend, dev, Software Engineer",
           description: "Shorts devs concepts descriptions",
           images: [
             {
