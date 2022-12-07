@@ -7,7 +7,11 @@ const navigation = [
   { name: "Inicio", href: "/", target: "" },
   { name: "Experiencia", href: "/experience", target: "" },
   { name: "👨🏾‍💻 Mentorship", href: "/webdevpath", target: "" },
-  //{ name: "viiiiis App", href: "/viiiiis", target: "" },
+  {
+    name: "📖Frontend Concepts repo",
+    href: "https://vfrontend-concepts.vercel.app/",
+    target: "_blank",
+  },
   { name: "Blog", href: "/blog", target: "" },
   {
     name: "☕ Buy me a coffee",
