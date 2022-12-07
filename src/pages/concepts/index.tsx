@@ -7,17 +7,57 @@ const Home = () => {
   return (
     <Layout pageTitle="vFrontend Concepts">
       <Head>
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:site" content="www.viistorrr.com" />
-        <meta name="twitter:creator" content="@viistorrr" />
-        <meta property="og:url" content="https://www.viistorrr.com/concepts/" />
-        <meta property="og:title" content="Shorts devs concepts descriptions" />
         <meta
+          key="og-url"
+          property="og:url"
+          content="https://www.viistorrr.com/concepts/"
+        />
+        <meta key="og-type" property="og:type" content="website" />
+        <meta
+          key="og-title"
+          property="og:title"
+          content="Shorts devs concepts descriptions"
+        />
+        <meta
+          key="og-desc"
           property="og:description"
           content="Shorts devs concepts descriptions"
         />
         <meta
+          key="og-img"
           property="og:image"
+          content="https://www.viistorrr.com/assets/imgs/webdevpath/working.jpg"
+        />
+        <meta key="tw-card" name="twitter:card" content="summary_large_image" />
+        <meta
+          key="tw-domain"
+          property="twitter:domain"
+          content="viistorrr.com"
+        />
+        <meta
+          key="tw-title"
+          name="twitter:title"
+          content="vFrontend Concepts"
+        />
+        <meta
+          key="tw-site"
+          name="twitter:site"
+          content="https://www.viistorrr.com/concepts/"
+        />
+        <meta
+          key="tw-url"
+          property="twitter:url"
+          content="https://www.viistorrr.com/concepts/"
+        />
+        <meta key="tw-creator" name="twitter:creator" content="@viistorrr" />
+        <meta
+          key="tw-desc"
+          name="twitter:description"
+          content="Shorts devs concepts descriptions"
+        />
+        <meta
+          key="tw-img"
+          name="twitter:image"
           content="https://www.viistorrr.com/assets/imgs/webdevpath/working.jpg"
         />
       </Head>
