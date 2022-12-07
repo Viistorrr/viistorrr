@@ -7,34 +7,17 @@ const Home = () => {
   return (
     <Layout pageTitle="vFrontend Concepts">
       <Head>
-        <title>vFrontend Concepts</title>
-        <meta name="description" content="Shorts devs concepts descriptions" />
-
-        <meta property="og:url" content="https://www.viistorrr.com/concepts" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="vFrontend Concepts" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="www.viistorrr.com" />
+        <meta name="twitter:creator" content="@viistorrr" />
+        <meta property="og:url" content="https://www.viistorrr.com/concepts/" />
+        <meta property="og:title" content="Shorts devs concepts descriptions" />
         <meta
           property="og:description"
           content="Shorts devs concepts descriptions"
         />
         <meta
           property="og:image"
-          content="https://www.viistorrr.com/assets/imgs/webdevpath/working.jpg"
-        />
-
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta property="twitter:domain" content="viistorrr.com" />
-        <meta
-          property="twitter:url"
-          content="https://www.viistorrr.com/concepts"
-        />
-        <meta name="twitter:title" content="vFrontend Concepts" />
-        <meta
-          name="twitter:description"
-          content="Shorts devs concepts descriptions"
-        />
-        <meta
-          name="twitter:image"
           content="https://www.viistorrr.com/assets/imgs/webdevpath/working.jpg"
         />
       </Head>
