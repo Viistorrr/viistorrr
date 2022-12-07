@@ -28,16 +28,20 @@ const Home = () => {
           property="og:image"
           content="https://www.viistorrr.com/assets/imgs/webdevpath/working.jpg"
         />
-        <meta key="tw-card" name="twitter:card" content="summary_large_image" />
+        <meta
+          key="tw-card"
+          property="twitter:card"
+          content="summary_large_image"
+        />
         <meta
           key="tw-domain"
           property="twitter:domain"
           content="viistorrr.com"
         />
-        <meta key="tw-title" name="twitter:title" content="vConcepts" />
+        <meta key="tw-title" property="twitter:title" content="vConcepts" />
         <meta
           key="tw-site"
-          name="twitter:site"
+          property="twitter:site"
           content="https://www.viistorrr.com/concepts/"
         />
         <meta
@@ -45,15 +49,19 @@ const Home = () => {
           property="twitter:url"
           content="https://www.viistorrr.com/concepts/"
         />
-        <meta key="tw-creator" name="twitter:creator" content="@viistorrr" />
+        <meta
+          key="tw-creator"
+          property="twitter:creator"
+          content="@viistorrr"
+        />
         <meta
           key="tw-desc"
-          name="twitter:description"
+          property="twitter:description"
           content="Shorts devs concepts descriptions"
         />
         <meta
           key="tw-img"
-          name="twitter:image"
+          property="twitter:image"
           content="https://www.viistorrr.com/assets/imgs/webdevpath/working.jpg"
         />
       </Head>
