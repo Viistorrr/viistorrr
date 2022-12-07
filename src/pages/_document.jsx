@@ -26,6 +26,35 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
           rel="stylesheet"
         />
+        <meta
+          name="description"
+          content="Víctor Meza | frontend, dev, Software Engineer, IT Consultant"
+        />
+        <meta property="og:title" content="viistorrr.com"></meta>
+        <meta property="og:url" content="https://www.viistorrr.com" />
+        <meta property="og:type" content="website" />
+
+        <meta
+          property="og:description"
+          content="Víctor Meza | frontend, dev, Software Engineer"
+        />
+        <meta
+          property="og:image"
+          content="https://www.viistorrr.com/assets/imgs/webdevpath/working.jpg"
+        />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="www.viistorrr.com" />
+        <meta property="twitter:url" content="https://www.viistorrr.com" />
+        <meta property="twitter:title" content="https://www.viistorrr.com" />
+        <meta
+          property="twitter:description"
+          content="Víctor Meza | frontend, dev, Software Engineer"
+        />
+        <meta
+          property="twitter:image"
+          content="https://www.viistorrr.com/assets/imgs/webdevpath/working.jpg"
+        />
       </Head>
       <body>
         <Main />

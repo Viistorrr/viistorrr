@@ -17,7 +17,6 @@ const Layout = ({ children, pageTitle }: LayoutProps) => {
     <>
       <Head>
         <title>{pageTitle}</title>
-
         <meta
           name="description"
           content="Víctor Meza | frontend, dev, Software Engineer, IT Consultant"
