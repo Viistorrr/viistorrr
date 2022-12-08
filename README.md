@@ -4,11 +4,11 @@
 
 ### link to my website 👇🏾
 
-[www.viistorrr.com](https://www.viistorrr.com/)
+[🌐 www.viistorrr.com](https://www.viistorrr.com/)
 
 ### join to my slack channel 👇🏾
 
-[Slack](https://join.slack.com/t/webdev-path/shared_invite/zt-1dkkhbxc2-Eb_jrPdBF7cM6GxYs48_pQ)
+[💬 webDevPath Slack channel](https://join.slack.com/t/webdev-path/shared_invite/zt-1dkkhbxc2-Eb_jrPdBF7cM6GxYs48_pQ)
 
 ### Buy me a coffee 👇🏾
 
