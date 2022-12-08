@@ -2,14 +2,14 @@
 
 ☕ #5amclub | ReactJS | NextJS | Typescript | Always learing
 
-link to my website 👇🏾
+### link to my website 👇🏾
 
-[Image] [www.viistorrr.com](https://www.viistorrr.com/) [Image]
+[www.viistorrr.com](https://www.viistorrr.com/)
 
-join to my slack channel 👇🏾
+### join to my slack channel 👇🏾
 
-[Image] [Slack](https://join.slack.com/t/webdev-path/shared_invite/zt-1dkkhbxc2-Eb_jrPdBF7cM6GxYs48_pQ) [Image]
+[Slack](https://join.slack.com/t/webdev-path/shared_invite/zt-1dkkhbxc2-Eb_jrPdBF7cM6GxYs48_pQ)
 
-Buy me a coffee 👇🏾
+### Buy me a coffee 👇🏾
 
-[Image] [☕](https://www.buymeacoffee.com/viistorrr) [Image]
+[☕](https://www.buymeacoffee.com/viistorrr)
