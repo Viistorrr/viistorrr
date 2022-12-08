@@ -3,6 +3,7 @@ import Layout from "@components/Layout";
 import MainList from "@components/concepts/MainList";
 import Details from "@components/concepts/Details";
 import Head from "next/head";
+import Link from "next/link";
 
 const Home = () => {
   return (
@@ -41,18 +42,23 @@ const Home = () => {
           content="https://www.viistorrr.com/assets/imgs/webdevpath/working.jpg"
         />
       </Head>
-      <div>
-        <div className="flex justify-center py-4 my-4">
+      <div className="flex flex-col justify-center p-2 m-2">
+        <div className="flex flex-col w-full justify-center py-4 my-4 sm:flex-col md:flex-row lg:flex-row">
           <h1>
-            just another frontend concepts and code snippets site Powered by{" "}
-            <span className="font-bold">@viistorrr</span>
+            <strong>BETA:</strong> just another frontend concepts and code
+            snippets site Powered by{" "}
+            <Link href="https://twitter.com/viistorrr">
+              <a className="font-bold" target="_blank">
+                @viistorrr
+              </a>
+            </Link>
           </h1>
         </div>
-        <div className="flex p-2 m-2">
-          <div className="w-1/2 m-2">
+        <div className="flex w-full flex-col lg:p-2 lg:m-2 lg:flex-row">
+          <div className="w-full py-2 lg:m-2 lg:w-1/2">
             <MainList />
           </div>
-          <div className="w-1/2 m-2">
+          <div className="w-full py-2 lg:m-2 lg:w-1/2">
             <Details />
           </div>
         </div>
