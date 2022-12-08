@@ -1,6 +1,6 @@
 👨🏾‍💻 | frontend | dev | Software Engineer | Mentor
 
-☕ #5amclub | ReactJS | NextJS | Typescript | Always learing
+☕ #5amclub | ReactJS | NextJS | Typescript | Always learning
 
 ### link to my website 👇🏾
 
