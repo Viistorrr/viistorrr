@@ -72,7 +72,7 @@ const Details = () => {
                     />
                   </div>
                   <div className="min-w-0 flex-1">
-                    <p className="text-sm font-medium text-gray-900">
+                    <p className="text-sm font-medium text-primary">
                       <a
                         href={question.author.href}
                         className="hover:underline"
@@ -80,7 +80,7 @@ const Details = () => {
                         {question.author.name}
                       </a>
                     </p>
-                    <p className="text-sm text-gray-500">
+                    <p className="text-sm text-primary">
                       <a href={question.href} className="hover:underline">
                         <time dateTime={question.datetime}>
                           {question.date}
@@ -91,7 +91,7 @@ const Details = () => {
                 </div>
                 <h2
                   id={"question-title-" + question.id}
-                  className="mt-4 text-base font-bold text-gray-900"
+                  className="mt-4 text-base font-bold text-primary"
                 >
                   {question.title}
                 </h2>

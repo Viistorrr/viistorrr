@@ -1,11 +1,13 @@
-import { NextSeo } from "next-seo";
+import Head from "next/head";
+import Link from "next/link";
 import Layout from "@components/Layout";
 import MainList from "@components/concepts/MainList";
 import Details from "@components/concepts/Details";
-import Head from "next/head";
-import Link from "next/link";
 
 const Home = () => {
+  const handleToogle = () => {
+    console.log("click here handleToogle");
+  };
   return (
     <Layout pageTitle="vConcepts">
       <Head>
@@ -55,7 +57,10 @@ const Home = () => {
           </h1>
         </div>
         <div className="flex w-full flex-col lg:p-2 lg:m-2 lg:flex-row">
-          <div className="w-full py-2 lg:m-2 lg:w-1/2">
+          <div
+            className="w-full py-2 lg:m-2 lg:w-1/2"
+            onClick={() => handleToogle()}
+          >
             <MainList />
           </div>
           <div className="w-full py-2 lg:m-2 lg:w-1/2">

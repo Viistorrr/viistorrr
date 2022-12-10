@@ -5,8 +5,36 @@ const positions = [
     id: 1,
     title: "Title Test",
     department: "frontend",
-    closeDate: "2020-01-07",
+    closeDate: "2022-12-07",
     closeDateFull: "Dec 7, 2022",
+  },
+  {
+    id: 2,
+    title: "Diferencia entre var, let y const",
+    department: "javascript",
+    closeDate: "2022-12-09",
+    closeDateFull: "Dec 9, 2022",
+  },
+  {
+    id: 3,
+    title: "Arrow functions",
+    department: "javascript",
+    closeDate: "2022-12-11",
+    closeDateFull: "Dec 11, 2022",
+  },
+  {
+    id: 4,
+    title: "Functional components",
+    department: "reactjs",
+    closeDate: "2022-12-11",
+    closeDateFull: "Dec 11, 2022",
+  },
+  {
+    id: 5,
+    title: "Operador ternario",
+    department: "reactjs",
+    closeDate: "2022-12-11",
+    closeDateFull: "Dec 11, 2022",
   },
 ];
 
@@ -21,7 +49,7 @@ export default function MainList() {
                 <div className="min-w-0 flex-1 sm:flex sm:items-center sm:justify-between">
                   <div className="truncate">
                     <div className="flex text-sm">
-                      <p className="truncate font-medium text-indigo-600">
+                      <p className="truncate font-medium text-primary">
                         {position.title}
                       </p>
                       <p className="ml-1 flex-shrink-0 font-bold text-gray-500">
