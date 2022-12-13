@@ -3,12 +3,12 @@ import { CalendarIcon, ChevronRightIcon } from "@heroicons/react/solid";
 const positions = [
   {
     id: 1,
-    title: "Title Test",
+    title: "Operador Ternario en lugar de '&&' en ReactJS/NextJS",
     department: "frontend",
     closeDate: "2022-12-07",
     closeDateFull: "Dec 7, 2022",
   },
-  {
+  /* {
     id: 2,
     title: "Diferencia entre var, let y const",
     department: "javascript",
@@ -35,7 +35,7 @@ const positions = [
     department: "reactjs",
     closeDate: "2022-12-11",
     closeDateFull: "Dec 11, 2022",
-  },
+  }, */
 ];
 
 export default function MainList() {

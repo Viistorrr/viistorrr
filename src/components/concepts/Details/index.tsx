@@ -1,19 +1,5 @@
-import { Fragment } from "react";
-import { Menu, Popover, Transition } from "@headlessui/react";
-import {
-  //ChatBubbleLeftEllipsisIcon,
-  //CodeBracketIcon,
-  //EllipsisVerticalIcon,
-  EyeIcon,
-  FlagIcon,
-  //HandThumbUpIcon,
-  //MagnifyingGlassIcon,
-  PlusIcon,
-  ShareIcon,
-} from "@heroicons/react/solid";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faEllipsisVertical,
   faThumbsUp,
   faComment,
   faEye,
@@ -36,14 +22,19 @@ const questions = [
     date: "December 7, 2022",
     datetime: "2020-12-09T11:43:00",
     href: "#",
-    title: "Title Test",
+    title: "Operador Ternario en lugar de '&&' en ReactJS/NextJS",
     body: `
-        <p>Lorem ipsum description test will be placed here.</p>
+        <p>Ya puedes dejar de usar el operador '&&' en un Conditional Rendering de tus componentes de ReactJS/NextJS</p>
 
-        <p>Lorem ipsum with more description bla bla bla test</p>
+        <p>
+        const RandomComponent = ({ condicion }) => {
+          return (
+            <>
+              {condicion && <YourConditionalComponent />}
+            </>
+          );
         
-        <p>Lorem ipsum with more description bla bla bla testLorem ipsum with more description bla bla bla testLorem ipsum with more description bla bla bla testLorem ipsum with more description bla bla bla testLorem ipsum with more description bla bla bla testLorem ipsum with more description bla bla bla testLorem ipsum with more description bla bla bla test.</p>
-        
+        </p>
       `,
   },
 ];

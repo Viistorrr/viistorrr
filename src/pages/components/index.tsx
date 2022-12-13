@@ -1,31 +1,24 @@
 import Head from "next/head";
 import Link from "next/link";
 import Layout from "@components/Layout";
-import MainList from "@components/concepts/MainList";
-import Details from "@components/concepts/Details";
+import Steps from "@components/library/Steps";
 
 const Home = () => {
   const handleToogle = () => {
     console.log("click here handleToogle");
   };
   return (
-    <Layout pageTitle="vConcepts">
+    <Layout pageTitle="vComponents">
       <Head>
+        <meta name="description" content="vComponents | snippets" />
+        <meta property="og:title" content="vComponents | snippets"></meta>
         <meta
-          name="description"
-          content="vConcepts | Shorts devs concepts descriptions"
+          property="og:url"
+          content="https://www.viistorrr.com/components"
         />
-        <meta
-          property="og:title"
-          content="vConcepts | Shorts devs concepts descriptions"
-        ></meta>
-        <meta property="og:url" content="https://www.viistorrr.com/concepts" />
         <meta property="og:type" content="website" />
 
-        <meta
-          property="og:description"
-          content="vConcepts | Shorts devs concepts descriptions"
-        />
+        <meta property="og:description" content="vComponents | snippets" />
         <meta
           property="og:image"
           content="https://www.viistorrr.com/assets/imgs/webdevpath/working.jpg"
@@ -35,13 +28,10 @@ const Home = () => {
         <meta property="twitter:domain" content="www.viistorrr.com" />
         <meta
           property="twitter:url"
-          content="https://www.viistorrr.com/concepts"
+          content="https://www.viistorrr.com/components"
         />
         <meta property="twitter:title" content="vConcepts" />
-        <meta
-          property="twitter:description"
-          content="vConcepts | Shorts devs concepts descriptions"
-        />
+        <meta property="twitter:description" content="vComponents | snippets" />
         <meta
           property="twitter:image"
           content="https://www.viistorrr.com/assets/imgs/webdevpath/working.jpg"
@@ -50,8 +40,8 @@ const Home = () => {
       <div className="flex flex-col justify-center p-2 m-2">
         <div className="flex flex-col w-full justify-center py-4 my-4 sm:flex-col md:flex-row lg:flex-row">
           <h1>
-            <strong>BETA:</strong> conceptos random de frontend y code snippets.
-            Powered by{" "}
+            <strong>BETA:</strong> componentes random que he utilizado y a vos
+            también te podrían servir. Powered by{" "}
             <Link href="https://twitter.com/viistorrr">
               <a className="font-bold" target="_blank">
                 @viistorrr
@@ -60,14 +50,8 @@ const Home = () => {
           </h1>
         </div>
         <div className="flex w-full flex-col lg:p-2 lg:m-2 lg:flex-row">
-          <div
-            className="w-full py-2 lg:m-2 lg:w-1/2"
-            onClick={() => handleToogle()}
-          >
-            <MainList />
-          </div>
-          <div className="w-full py-2 lg:m-2 lg:w-1/2">
-            <Details />
+          <div className="flex flex-col w-full p-2 m-2 lg:w-2/3">
+            <Steps />
           </div>
         </div>
       </div>
