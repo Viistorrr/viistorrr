@@ -4,9 +4,6 @@ import Layout from "@components/Layout";
 import Steps from "@components/library/Steps";
 
 const Home = () => {
-  const handleToogle = () => {
-    console.log("click here handleToogle");
-  };
   return (
     <Layout pageTitle="vComponents">
       <Head>

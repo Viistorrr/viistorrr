@@ -6,8 +6,13 @@ import { MenuIcon, XIcon } from "@heroicons/react/outline";
 const navigation = [
   { name: "Inicio", href: "/", target: "" },
   { name: "Experiencia", href: "/experience", target: "" },
-  { name: "📖vConcepts", href: "/concepts", target: "" },
-  { name: "📋vComponents", href: "/components", target: "" },
+  {
+    name: "⏳vYear Progress",
+    href: "https://vyearprogress.vercel.app/",
+    target: "_blank",
+  },
+  // { name: "📋vConcepts", href: "/concepts", target: "" },
+  // { name: "📋vComponents", href: "/components", target: "" },
   { name: "Blog", href: "/blog", target: "" },
   { name: "👨🏾‍💻 Mentorship", href: "/webdevpath", target: "" },
   { name: "📒viiiiis", href: "https://www.viiiiis.com/", target: "_blank" },
