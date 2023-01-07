@@ -7,8 +7,8 @@ const navigation = [
   { name: "Inicio", href: "/", target: "" },
   { name: "Experiencia", href: "/experience", target: "" },
   {
-    name: "⏳vYear Progress",
-    href: "https://vyearprogress.vercel.app/",
+    name: "⏳Progreso del Año",
+    href: "https://www.progresodelano.info/",
     target: "_blank",
   },
   // { name: "📋vConcepts", href: "/concepts", target: "" },
