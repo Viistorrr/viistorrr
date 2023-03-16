@@ -2,7 +2,6 @@ import Head from "next/head";
 import Footer from "./Footer";
 import Header from "./Header";
 import { useRouter } from "next/router";
-import { NextSeo } from "next-seo";
 
 type LayoutProps = {
   children: React.ReactNode;
@@ -19,7 +18,7 @@ const Layout = ({ children, pageTitle }: LayoutProps) => {
         <title>{pageTitle}</title>
         <meta
           name="description"
-          content="Víctor Meza | frontend, dev, Software Engineer, IT Consultant"
+          content="Víctor Meza | dev, Ingeniero, Software, IT| Curioso, apasionado y siempre aprendiendo"
         />
         <meta property="og:title" content={pageTitle}></meta>
         <meta
