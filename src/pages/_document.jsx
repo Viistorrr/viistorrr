@@ -28,7 +28,7 @@ export default function Document() {
         />
         <meta
           name="description"
-          content="Víctor Meza | frontend, dev, Software Engineer, IT Consultant | Curious, passionate, and always learning."
+          content="Víctor Meza | dev, Ingeniero, Software, IT| Curioso, apasionado y siempre aprendiendo"
         />
         <meta property="og:title" content="viistorrr.com"></meta>
         <meta property="og:url" content="https://www.viistorrr.com" />
@@ -36,7 +36,7 @@ export default function Document() {
 
         <meta
           property="og:description"
-          content="Víctor Meza | frontend, dev, Software Engineer, IT Consultant | Curious, passionate, and always learning."
+          content="Víctor Meza | dev, Ingeniero, Software, IT| Curioso, apasionado y siempre aprendiendo"
         />
         <meta
           property="og:image"
@@ -49,7 +49,7 @@ export default function Document() {
         <meta property="twitter:title" content="https://www.viistorrr.com" />
         <meta
           property="twitter:description"
-          content="Víctor Meza | frontend, dev, Software Engineer, IT Consultant | Curious, passionate, and always learning."
+          content="Víctor Meza | dev, Ingeniero, Software, IT| Curioso, apasionado y siempre aprendiendo"
         />
         <meta
           property="twitter:image"
