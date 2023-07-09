@@ -41,12 +41,6 @@ const navigation = {
       target: "_blank",
       icon: faSpotify,
     },
-    {
-      name: "Slack Channel",
-      href: "https://join.slack.com/t/webdev-path/shared_invite/zt-1dkkhbxc2-Eb_jrPdBF7cM6GxYs48_pQ",
-      target: "_blank",
-      icon: faSlack,
-    },
   ],
 };
 

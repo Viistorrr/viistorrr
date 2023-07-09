@@ -14,8 +14,6 @@ const navigation = [
   // { name: "📋vConcepts", href: "/concepts", target: "" },
   // { name: "📋vComponents", href: "/components", target: "" },
   { name: "Blog", href: "/blog", target: "" },
-  { name: "👨🏾‍💻 Mentorship", href: "/webdevpath", target: "" },
-  { name: "📒viiiiis", href: "https://www.viiiiis.com/", target: "_blank" },
   {
     name: "☕ Buy me a coffee",
     href: "https://www.buymeacoffee.com/viistorrr",
