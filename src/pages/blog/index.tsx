@@ -30,7 +30,7 @@ const Blog = ({ posts }) => {
       <Head>
         <meta
           name="twitter:image"
-          content="https://www.viistorrr.com/assets/imgs/webdevpath/working.jpg"
+          content="https://www.viistorrr.com/assets/imgs/webdevpath/preview.jpg"
         />
         <meta
           property="og:description"
@@ -42,7 +42,7 @@ const Blog = ({ posts }) => {
         />
         <meta
           property="og:image"
-          content="https://www.viistorrr.com/assets/imgs/webdevpath/working.jpg"
+          content="https://www.viistorrr.com/assets/imgs/webdevpath/preview.jpg"
         />
       </Head>
       <div className="container mx-auto px-4">

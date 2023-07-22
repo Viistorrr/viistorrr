@@ -40,7 +40,7 @@ export default function Document() {
         />
         <meta
           property="og:image"
-          content="https://www.viistorrr.com/assets/imgs/webdevpath/working.jpg"
+          content="https://www.viistorrr.com/assets/imgs/webdevpath/preview.jpg"
         />
 
         <meta property="twitter:card" content="summary_large_image" />
@@ -53,7 +53,7 @@ export default function Document() {
         />
         <meta
           property="twitter:image"
-          content="https://www.viistorrr.com/assets/imgs/webdevpath/working.jpg"
+          content="https://www.viistorrr.com/assets/imgs/webdevpath/preview.jpg"
         />
       </Head>
       <body>

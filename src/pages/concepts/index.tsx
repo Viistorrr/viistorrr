@@ -28,7 +28,7 @@ const Home = () => {
         />
         <meta
           property="og:image"
-          content="https://www.viistorrr.com/assets/imgs/webdevpath/working.jpg"
+          content="https://www.viistorrr.com/assets/imgs/webdevpath/preview.jpg"
         />
 
         <meta property="twitter:card" content="summary_large_image" />
@@ -44,7 +44,7 @@ const Home = () => {
         />
         <meta
           property="twitter:image"
-          content="https://www.viistorrr.com/assets/imgs/webdevpath/working.jpg"
+          content="https://www.viistorrr.com/assets/imgs/webdevpath/preview.jpg"
         />
       </Head>
       <div className="flex flex-col justify-center p-2 m-2">
