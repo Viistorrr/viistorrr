@@ -1,6 +1,6 @@
-👨🏾‍💻 | dev | Ingeniero | Software | Mentor
+ Víctor Meza | dev | Ingeniero | 👨🏾‍💻
 
-☕ #5amclub | Javascript | ReactJS | NextJS | Typescript | Siempre aprendiendo
+ Javascript | ReactJS | NextJS | Typescript | Muy Curioso y Siempre aprendiendo
 
 ### link to my website 👇🏾
 
