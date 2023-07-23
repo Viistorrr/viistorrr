@@ -5,7 +5,6 @@ import { MenuIcon, XIcon } from "@heroicons/react/outline";
 
 const navigation = [
   { name: "Inicio", href: "/", target: "" },
-  { name: "Experiencia", href: "/experience", target: "" },
   {
     name: "⏳Progreso del Año",
     href: "https://www.progresodelano.info/",
@@ -14,6 +13,7 @@ const navigation = [
   // { name: "📋vConcepts", href: "/concepts", target: "" },
   // { name: "📋vComponents", href: "/components", target: "" },
   { name: "Blog", href: "/blog", target: "" },
+  { name: "Experiencia", href: "/experiencia", target: "" },
   {
     name: "☕ Buy me a coffee",
     href: "https://www.buymeacoffee.com/viistorrr",
