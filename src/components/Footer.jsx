@@ -3,14 +3,19 @@ import {
   faInstagram,
   faGithub,
   faLinkedin,
-  faFacebook,
   faSpotify,
-  faSlack,
-  faTwitter,
+  faTwitter
 } from "@fortawesome/free-brands-svg-icons";
+import { faHourglassStart } from "@fortawesome/free-solid-svg-icons";
 
 const navigation = {
   social: [
+    {
+      name: "Progreso del Año",
+      href: "https://www.progresodelano.info/",
+      target: "_blank",
+      icon: faHourglassStart,
+    },
     {
       name: "LinkedIn",
       href: "https://www.linkedin.com/in/viistorrr/",

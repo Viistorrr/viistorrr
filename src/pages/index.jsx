@@ -1,5 +1,4 @@
 import Layout from "@components/Layout";
-import Head from "next/head";
 
 const Home = () => {
   return (
@@ -12,7 +11,6 @@ const Home = () => {
             <span className="block xl:inline">dev</span>
             {" | "}
             <span className="block text-gray-900 xl:inline">Ingeniero</span>
-            <span className="block text-gray-900 xl:inline">👨🏾‍💻</span>
           </h1>
         </div>
       </main>
