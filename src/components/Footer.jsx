@@ -6,7 +6,7 @@ import {
   faSpotify,
   faTwitter
 } from "@fortawesome/free-brands-svg-icons";
-import { faHourglassStart } from "@fortawesome/free-solid-svg-icons";
+import { faHourglassStart, faRobot } from "@fortawesome/free-solid-svg-icons";
 
 const navigation = {
   social: [
@@ -15,6 +15,12 @@ const navigation = {
       href: "https://www.progresodelano.info/",
       target: "_blank",
       icon: faHourglassStart,
+    },
+    {
+      name: "IAs for Negros",
+      href: "https://www.instagram.com/iasfornegros/",
+      target: "_blank",
+      icon: faRobot,
     },
     {
       name: "LinkedIn",
