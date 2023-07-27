@@ -6,7 +6,7 @@ import {
   faSpotify,
   faTwitter
 } from "@fortawesome/free-brands-svg-icons";
-import { faHourglassStart, faRobot } from "@fortawesome/free-solid-svg-icons";
+import { faHourglassStart, faRobot, faBurger } from "@fortawesome/free-solid-svg-icons";
 
 const navigation = {
   social: [
@@ -47,6 +47,12 @@ const navigation = {
       icon: faInstagram,
     },
     {
+      name: "Burger",
+      href: "https://www.buymeacoffee.com/viistorrr",
+      target: "_blank",
+      icon: faBurger,
+    },
+    {
       name: "Spotify Playlist",
       href: "https://open.spotify.com/playlist/02A9TTFAZf6k1lpTDalR1K?si=f631cb2f1e78455e",
       target: "_blank",
@@ -57,25 +63,25 @@ const navigation = {
 
 export default function Footer() {
   return (
-    <footer className="bg-white">
+    <footer className="flex bg-white">
       <div className="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
         <nav
-          className="-mx-5 -my-2 flex flex-wrap justify-center"
+          className="flex justify-center"
           aria-label="Footer"
-        ></nav>
-        <div className="mt-8 flex justify-center space-x-6">
-          {navigation.social.map((item) => (
-            <a
-              key={item.name}
-              href={item.href}
-              target={item.target}
-              className="text-gray-800 hover:text-gray-500"
-            >
-              <span className="sr-only">{item.name}</span>
-              <FontAwesomeIcon icon={item.icon} size="2xl" />
-            </a>
-          ))}
-        </div>
+        ><div className="mt-8 justify-center space-x-4">
+        {navigation.social.map((item) => (
+          <a
+            key={item.name}
+            href={item.href}
+            target={item.target}
+            className="text-gray-800 hover:text-gray-500"
+          >
+            <span className="sr-only">{item.name}</span>
+            <FontAwesomeIcon icon={item.icon} size="2xl" />
+          </a>
+        ))}
+      </div></nav>
+        
       </div>
     </footer>
   );

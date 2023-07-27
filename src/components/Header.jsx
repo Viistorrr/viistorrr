@@ -10,15 +10,10 @@ const navigation = [
     href: "https://www.progresodelano.info/",
     target: "_blank",
   },
-  // { name: "📋vConcepts", href: "/concepts", target: "" },
-  // { name: "📋vComponents", href: "/components", target: "" },
+  //{ name: "📋vConcepts", href: "/concepts", target: "" },
+  //{ name: "📋vComponents", href: "/components", target: "" },
   { name: "Blog", href: "/blog", target: "" },
-  { name: "Experiencia", href: "/experiencia", target: "" },
-  {
-    name: "☕ Buy me a coffee",
-    href: "https://www.buymeacoffee.com/viistorrr",
-    target: "_blank",
-  },
+  { name: "Experiencia", href: "/experiencia", target: "" }
 ];
 
 const Header = () => {
