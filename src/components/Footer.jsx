@@ -17,7 +17,7 @@ const navigation = {
       icon: faHourglassStart,
     },
     {
-      name: "IAs for Negros",
+      name: "for Negros",
       href: "https://www.instagram.com/fornegros/",
       target: "_blank",
       icon: faRobot,
