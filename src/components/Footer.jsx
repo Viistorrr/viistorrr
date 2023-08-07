@@ -74,7 +74,7 @@ export default function Footer() {
             key={item.name}
             href={item.href}
             target={item.target}
-            className="text-gray-800 hover:text-gray-500"
+            className="text-gray-800 hover:text-orange-400"
           >
             <span className="sr-only">{item.name}</span>
             <FontAwesomeIcon icon={item.icon} size="2xl" />

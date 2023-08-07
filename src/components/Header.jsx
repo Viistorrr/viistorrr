@@ -44,7 +44,7 @@ const Header = () => {
                   <a
                     target={item.target}
                     key={item.name}
-                    className="font-bold text-gray-500 hover:text-gray-900"
+                    className="font-bold text-gray-500 hover:text-orange-400"
                   >
                     {item.name}
                   </a>
