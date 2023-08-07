@@ -4,7 +4,7 @@ import {
   faGithub,
   faLinkedin,
   faSpotify,
-  faTwitter
+  faXTwitter
 } from "@fortawesome/free-brands-svg-icons";
 import { faHourglassStart, faRobot, faBurger } from "@fortawesome/free-solid-svg-icons";
 
@@ -18,7 +18,7 @@ const navigation = {
     },
     {
       name: "for Negros",
-      href: "https://www.instagram.com/fornegros/",
+      href: "https://www.fornegros.com/",
       target: "_blank",
       icon: faRobot,
     },
@@ -38,7 +38,7 @@ const navigation = {
       name: "Twitter",
       href: "https://twitter.com/viistorrr",
       target: "_blank",
-      icon: faTwitter,
+      icon: faXTwitter,
     },
     {
       name: "Instagram",
