@@ -6,10 +6,16 @@ import {
   faSpotify,
   faXTwitter
 } from "@fortawesome/free-brands-svg-icons";
-import { faHourglassStart, faRobot, faBurger } from "@fortawesome/free-solid-svg-icons";
+import { faHourglassStart, faRobot, faBurger, faCalendarAlt } from "@fortawesome/free-solid-svg-icons";
 
 const navigation = {
   social: [
+    {
+      name: "Agenda",
+      href: "https://calendly.com/viistorrr/",
+      target: "_blank",
+      icon: faCalendarAlt,
+    },
     {
       name: "Progreso del Año",
       href: "https://www.progresodelano.info/",
