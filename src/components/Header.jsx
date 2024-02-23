@@ -5,15 +5,15 @@ import { MenuIcon, XIcon } from "@heroicons/react/outline";
 
 const navigation = [
   { name: "Inicio", href: "/", target: "" },
-  {
+  /*{
     name: "⏳Progreso del Año",
     href: "https://www.progresodelano.info/",
     target: "_blank",
   },
-  //{ name: "📋vConcepts", href: "/concepts", target: "" },
-  //{ name: "📋vComponents", href: "/components", target: "" },
+  { name: "📋vConcepts", href: "/concepts", target: "" },
+  { name: "📋vComponents", href: "/components", target: "" },*/
   { name: "Blog", href: "/blog", target: "" },
-  { name: "Experiencia", href: "/experiencia", target: "" }
+  { name: "Experiencia", href: "/experiencia", target: "" },
 ];
 
 const Header = () => {

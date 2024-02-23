@@ -1,27 +1,26 @@
 import Layout from "@components/Layout";
-import { DeviceMobileIcon, CodeIcon } from "@heroicons/react/solid";
-import { ViewGridAddIcon, ChartSquareBarIcon } from "@heroicons/react/outline";
+import { DeviceMobileIcon, CodeIcon, PaperAirplaneIcon } from "@heroicons/react/solid";
 import Link from "next/link";
 
 const timeline = [
   {
     id: 1,
-    content: "Sr Frontend",
-    target: "BairesDev",
-    href: "https://www.bairesdev.com/",
-    date: "Sep 2022",
+    content: "CEO",
+    target: "for Negros",
+    href: "https://www.fornegros.com/",
+    date: "Sept 2023",
     datetime: "2013-09-20",
-    icon: CodeIcon,
+    icon: PaperAirplaneIcon,
     iconBackground: "bg-primary",
   },
   {
     id: 2,
-    content: "Technical Lead ",
-    target: "ALL TEAM",
-    href: "https://aal-team.com/",
-    date: "Sep 2020 - 2022",
+    content: "Sr Frontend",
+    target: "BairesDev",
+    href: "https://www.bairesdev.com/",
+    date: "April 2022",
     datetime: "2013-09-20",
-    icon: ViewGridAddIcon,
+    icon: CodeIcon,
     iconBackground: "bg-primary",
   },
   {
