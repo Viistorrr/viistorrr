@@ -5,10 +5,10 @@ import Link from "next/link";
 const timeline = [
   {
     id: 1,
-    content: "Founder",
+    content: "Co-Founder",
     target: "for Negros",
     href: "https://www.fornegros.com/",
-    date: "Sept 2023",
+    date: "Feb 2023",
     datetime: "2013-09-20",
     icon: PaperAirplaneIcon,
     iconBackground: "bg-primary",
