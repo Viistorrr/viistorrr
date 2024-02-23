@@ -1,10 +1,14 @@
- Víctor Meza | dev | Ingeniero | 👨🏾‍💻
+Víctor Meza | dev | Ingeniero | 👨🏾‍💻
 
- Javascript | ReactJS | NextJS | Typescript | Muy Curioso y Siempre aprendiendo
+Javascript | ReactJS | NextJS | Typescript | Muy Curioso, siempre aprendiendo
 
 ### link to my website 👇🏾
 
-[🌐 www.viistorrr.com](https://www.viistorrr.com/)
+[🌐 viistorrr.com](https://www.viistorrr.com/)
+
+### link to my website 👇🏾
+
+[✍🏿 fornegros.com](https://www.fornegros.com/)
 
 ### Buy me a coffee 👇🏾
 
