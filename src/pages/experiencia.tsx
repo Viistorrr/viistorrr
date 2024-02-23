@@ -5,7 +5,7 @@ import Link from "next/link";
 const timeline = [
   {
     id: 1,
-    content: "CEO",
+    content: "Founder",
     target: "for Negros",
     href: "https://www.fornegros.com/",
     date: "Sept 2023",
