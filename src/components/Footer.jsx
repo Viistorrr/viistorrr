@@ -4,9 +4,15 @@ import {
   faGithub,
   faLinkedin,
   faSpotify,
-  faXTwitter
+  faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
-import { faHourglassStart, faRobot, faBurger, faCalendarAlt } from "@fortawesome/free-solid-svg-icons";
+import {
+  faHourglassStart,
+  faRobot,
+  faBurger,
+  faCalendarAlt,
+  faCamera,
+} from "@fortawesome/free-solid-svg-icons";
 
 const navigation = {
   social: [
@@ -53,6 +59,12 @@ const navigation = {
       icon: faInstagram,
     },
     {
+      name: "Shutterstock",
+      href: "https://www.shutterstock.com/es/g/viistorrr",
+      target: "_blank",
+      icon: faCamera,
+    },
+    {
       name: "Burger",
       href: "https://www.buymeacoffee.com/viistorrr",
       target: "_blank",
@@ -71,23 +83,21 @@ export default function Footer() {
   return (
     <footer className="flex bg-white">
       <div className="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
-        <nav
-          className="flex justify-center"
-          aria-label="Footer"
-        ><div className="mt-8 justify-center space-x-4">
-        {navigation.social.map((item) => (
-          <a
-            key={item.name}
-            href={item.href}
-            target={item.target}
-            className="text-gray-800 hover:text-orange-400"
-          >
-            <span className="sr-only">{item.name}</span>
-            <FontAwesomeIcon icon={item.icon} size="2xl" />
-          </a>
-        ))}
-      </div></nav>
-        
+        <nav className="flex justify-center" aria-label="Footer">
+          <div className="mt-8 justify-center space-x-4">
+            {navigation.social.map((item) => (
+              <a
+                key={item.name}
+                href={item.href}
+                target={item.target}
+                className="text-gray-800 hover:text-orange-400"
+              >
+                <span className="sr-only">{item.name}</span>
+                <FontAwesomeIcon icon={item.icon} size="2xl" />
+              </a>
+            ))}
+          </div>
+        </nav>
       </div>
     </footer>
   );
