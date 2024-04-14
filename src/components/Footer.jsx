@@ -24,13 +24,13 @@ const navigation = {
     },
     {
       name: "Progreso del Año",
-      href: "https://www.progresodelano.info/",
+      href: "https://www.progresodelano.info/?utm_source=viistorrr.com&utm_medium=web",
       target: "_blank",
       icon: faHourglassStart,
     },
     {
       name: "for Negros",
-      href: "https://www.fornegros.com/",
+      href: "https://fornegros.com/?utm_source=viistorrr.com&utm_medium=web",
       target: "_blank",
       icon: faRobot,
     },
