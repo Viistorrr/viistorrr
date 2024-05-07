@@ -1,11 +1,41 @@
 import Layout from "@components/Layout";
-import { DeviceMobileIcon, CodeIcon, PaperAirplaneIcon } from "@heroicons/react/solid";
+import { DeviceMobileIcon, CodeIcon, PaperAirplaneIcon, DesktopComputerIcon } from "@heroicons/react/solid";
 import Link from "next/link";
 
 const timeline = [
-  {
+  /*{
     id: 1,
-    content: "Co-Founder",
+    content: "Dev",
+    target: "Jóvenes Creadores del Chocó",
+    href: "https://jovenescreadoresdelchoco.org/",
+    date: "May 2024",
+    datetime: "2013-09-20",
+    icon: CodeIcon,
+    iconBackground: "bg-primary",
+  },*/
+  {
+    id: 2,
+    content: "Formador",
+    target: "Código C13",
+    href: "https://www.codigoc13.com/",
+    date: "Feb 2024",
+    datetime: "2013-09-20",
+    icon: DesktopComputerIcon,
+    iconBackground: "bg-primary",
+  },
+  {
+    id: 3,
+    content: "Dev",
+    target: "Festival HavanaRPM",
+    href: "https://festivalhavanarpm.com/",
+    date: "Oct 2023",
+    datetime: "2013-09-20",
+    icon: CodeIcon,
+    iconBackground: "bg-primary",
+  },
+  {
+    id: 4,
+    content: "Co-Fundador",
     target: "for Negros",
     href: "https://www.fornegros.com/",
     date: "Feb 2023",
@@ -14,18 +44,18 @@ const timeline = [
     iconBackground: "bg-primary",
   },
   {
-    id: 2,
-    content: "Sr Frontend",
+    id: 5,
+    content: "Senior Web Dev",
     target: "BairesDev",
     href: "https://www.bairesdev.com/",
-    date: "April 2022",
+    date: "Apr 2022",
     datetime: "2013-09-20",
     icon: CodeIcon,
     iconBackground: "bg-primary",
   },
   {
-    id: 3,
-    content: "Sr Frontend  ",
+    id: 6,
+    content: "Senior Web Dev",
     target: "Overactive",
     href: "https://www.perficient.com/",
     date: "Sep 2021",
@@ -34,8 +64,8 @@ const timeline = [
     iconBackground: "bg-primary",
   },
   {
-    id: 4,
-    content: "Mobile Developer ",
+    id: 7,
+    content: "Mobile Dev",
     target: "Hola Dr",
     href: "https://holadr.com.co/",
     date: "2020 - 2021",
@@ -44,8 +74,8 @@ const timeline = [
     iconBackground: "bg-primary",
   },
   {
-    id: 5,
-    content: " Desarrollador Web ",
+    id: 8,
+    content: "Web Dev",
     target: "BitsAmericas SAS",
     href: "https://www.bitsamericas.com/",
     date: "2018 - 2020",
@@ -54,8 +84,8 @@ const timeline = [
     iconBackground: "bg-primary",
   },
   {
-    id: 6,
-    content: " Desarrollador Web Freelance",
+    id: 9,
+    content: "Web Dev",
     target: "Papayote Travel SAS",
     href: "https://papayotetravel.com/en/",
     date: "2015 - 2019",
@@ -64,8 +94,8 @@ const timeline = [
     iconBackground: "bg-primary",
   },
   {
-    id: 7,
-    content: " Desarrollador Web",
+    id: 10,
+    content: "Web Dev",
     target: "Wizard3D",
     href: "#",
     date: "2014",
@@ -74,8 +104,8 @@ const timeline = [
     iconBackground: "bg-primary",
   },
   {
-    id: 8,
-    content: " Desarrollador Web Freelance",
+    id: 11,
+    content: "Web Dev",
     target: "PanamaCOM",
     href: "#",
     date: "2013 - 2018",
