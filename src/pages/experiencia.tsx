@@ -154,14 +154,16 @@ export default function Example() {
                           {event.content}
                           {" en "}
                           <strong>
-                            <Link href={event.href}>
-                              <a
-                                target="_blank"
-                                className="font-medium text-gray-900"
-                              >
-                                {event.target}
-                              </a>
-                            </Link>
+                            <b>
+                              <Link href={event.href}>
+                                <a
+                                  target="_blank"
+                                  className="font-bold text-gray-900"
+                                >
+                                  {event.target}
+                                </a>
+                              </Link>
+                            </i>
                           </strong>
                         </p>
                       </div>
