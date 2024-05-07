@@ -154,7 +154,7 @@ export default function Example() {
                           {event.content}
                           {" en "}
                           <strong>
-                            <b>
+                            <i>
                               <Link href={event.href}>
                                 <a
                                   target="_blank"
