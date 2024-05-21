@@ -12,6 +12,10 @@ import {
   faBurger,
   faCalendarAlt,
   faCamera,
+  faList,
+  faListCheck,
+  faListAlt,
+  faListDots,
 } from "@fortawesome/free-solid-svg-icons";
 
 const navigation = {
@@ -33,6 +37,12 @@ const navigation = {
       href: "https://fornegros.com/?utm_source=viistorrr.com&utm_medium=web",
       target: "_blank",
       icon: faRobot,
+    },
+    {
+      name: "cosas simples",
+      href: "https://www.canva.com/design/DAGF0FssNXg/1yJqeloN5LcS0lFZFenSkQ/view?utm_content=DAGF0FssNXg&utm_campaign=designshare&utm_medium=link&utm_source=editor",
+      target: "_blank",
+      icon: faListCheck,
     },
     {
       name: "LinkedIn",
