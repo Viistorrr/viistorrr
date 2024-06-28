@@ -15,22 +15,12 @@ const timeline = [
   },*/
   {
     id: 2,
-    content: "Formador",
-    target: "Código C13",
-    href: "https://www.codigoc13.com/",
+    content: "Independiente",
+    target: "IT",
+    href: "#",
     date: "Feb 2024",
     datetime: "2013-09-20",
     icon: DesktopComputerIcon,
-    iconBackground: "bg-primary",
-  },
-  {
-    id: 3,
-    content: "Dev",
-    target: "Festival HavanaRPM",
-    href: "https://festivalhavanarpm.com/",
-    date: "Oct 2023",
-    datetime: "2013-09-20",
-    icon: CodeIcon,
     iconBackground: "bg-primary",
   },
   {
