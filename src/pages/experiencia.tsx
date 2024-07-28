@@ -27,7 +27,7 @@ const timeline = [
     id: 4,
     content: "Co-Fundador",
     target: "for Negros",
-    href: "https://www.fornegros.com/",
+    href: "https://fornegros.com/?utm_source=viistorrr.com&utm_medium=web",
     date: "Feb 2023",
     datetime: "2013-09-20",
     icon: PaperAirplaneIcon,
