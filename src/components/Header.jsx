@@ -14,7 +14,7 @@ const navigation = [
   { name: "📋vComponents", href: "/components", target: "" },*/
   { name: "Blog", href: "/blog", target: "" },
   { name: "Experiencia", href: "/experiencia", target: "" },
-  { name: "Portafolio", href: "/portfolio", target: "" },
+  //{ name: "Portafolio", href: "/portfolio", target: "" },
 ];
 
 const Header = () => {
