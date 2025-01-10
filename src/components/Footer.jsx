@@ -28,7 +28,7 @@ const navigation = {
     },
     {
       name: "Progreso del Año",
-      href: "https://www.progresodelano.info/?utm_source=viistorrr.com&utm_medium=web",
+      href: "https://vyearprogress.vercel.app?utm_source=viistorrr.com&utm_medium=web",
       target: "_blank",
       icon: faHourglassStart,
     },
