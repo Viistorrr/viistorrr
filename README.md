@@ -4,7 +4,7 @@ Javascript | ReactJS | NextJS | Typescript | Muy Curioso, siempre aprendiendo
 
 ### me 👇🏾
 
-[🌐 viistorrr.com](https://www.viistorrr.com/)
+[🌐 viistorrr.com](https://www.viistorrr.vercel.app/)
 
 ### fN 👇🏾
 
