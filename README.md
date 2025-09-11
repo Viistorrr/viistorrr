@@ -4,11 +4,11 @@ Javascript | ReactJS | NextJS | Typescript | Muy Curioso, siempre aprendiendo
 
 ### me 👇🏾
 
-[🌐 viistorrr.com](https://viistorrr.vercel.app/)
+[🌐 viistorrr.com](https://viistorrr.vercel.app/?utm_source=github&utm_medium=readme)
 
 ### fN 👇🏾
 
-[✍🏿 fornegros.com](https://fornegros.com/)
+[✍🏿 fornegros.com](https://fornegros.com/?utm_source=github&utm_medium=readme)
 
 ### A coffee 👇🏾
 
