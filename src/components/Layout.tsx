@@ -20,6 +20,7 @@ const Layout = ({ children, pageTitle }: LayoutProps) => {
           name="description"
           content="Víctor Meza | dev, Ingeniero, Software, IT| Curioso, apasionado y siempre aprendiendo"
         />
+        <meta name="google-site-verification" content="4GmVfp_LSQ0MHO4_x3f9DNBIq7ll8ijbwgXKXAcQDtM" />
         <meta property="og:title" content={pageTitle}></meta>
         <meta
           property="og:url"
