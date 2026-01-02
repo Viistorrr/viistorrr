@@ -16,7 +16,7 @@ const timeline = [
   {
     id: 2,
     content: "Independiente",
-    target: "IT",
+    target: "Ingeniería de Software",
     href: "#",
     date: "Ago 2023",
     datetime: "2013-09-20",
