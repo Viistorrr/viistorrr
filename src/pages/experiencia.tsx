@@ -18,7 +18,7 @@ const timeline = [
     content: "Independiente",
     target: "IT",
     href: "#",
-    date: "Feb 2024",
+    date: "Ago 2023",
     datetime: "2013-09-20",
     icon: DesktopComputerIcon,
     iconBackground: "bg-primary",
@@ -26,7 +26,7 @@ const timeline = [
   {
     id: 4,
     content: "Co-Fundador",
-    target: "for Negros",
+    target: "for Negr@s",
     href: "https://fornegros.com/?utm_source=viistorrr.com&utm_medium=web",
     date: "Feb 2023",
     datetime: "2013-09-20",
@@ -35,7 +35,7 @@ const timeline = [
   },
   {
     id: 5,
-    content: "Senior Web Dev",
+    content: "Senior Software Engineer",
     target: "BairesDev",
     href: "https://www.bairesdev.com/",
     date: "Apr 2022",
@@ -45,7 +45,7 @@ const timeline = [
   },
   {
     id: 6,
-    content: "Senior Web Dev",
+    content: "Senior Software Engineer",
     target: "Overactive",
     href: "https://www.perficient.com/",
     date: "Sep 2021",
@@ -65,7 +65,7 @@ const timeline = [
   },
   {
     id: 8,
-    content: "Web Dev",
+    content: "Software Engineer",
     target: "BitsAmericas SAS",
     href: "https://www.bitsamericas.com/",
     date: "2018 - 2020",
@@ -75,7 +75,7 @@ const timeline = [
   },
   {
     id: 9,
-    content: "Web Dev",
+    content: "Desarrollador de Software",
     target: "Papayote Travel SAS",
     href: "https://papayotetravel.com/en/",
     date: "2015 - 2019",
@@ -85,7 +85,7 @@ const timeline = [
   },
   {
     id: 10,
-    content: "Web Dev",
+    content: "Desarrollador de Software",
     target: "Wizard3D",
     href: "#",
     date: "2014",
@@ -95,7 +95,7 @@ const timeline = [
   },
   {
     id: 11,
-    content: "Web Dev",
+    content: "Desarrollador de Software",
     target: "PanamaCOM",
     href: "#",
     date: "2013 - 2018",
