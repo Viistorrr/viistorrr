@@ -12,7 +12,7 @@ import {
   faBurger,
   faCalendarAlt,
   faCamera,
-  faList,
+  faClock,
   faListCheck,
   faListAlt,
   faListDots,
@@ -25,6 +25,12 @@ const navigation = {
       href: "https://calendly.com/viistorrr/",
       target: "_blank",
       icon: faCalendarAlt,
+    },
+    {
+      name: "Progreso del Año",
+      href: "https://lifestreamoftime.lovable.app?utm_source=viistorrr.com&utm_medium=web",
+      target: "_blank",
+      icon: faClock,
     },
     {
       name: "Progreso del Año",
@@ -64,7 +70,7 @@ const navigation = {
     },
     {
       name: "Instagram",
-      href: "https://www.instagram.com/viistorrr/",
+      href: "https://www.instagram.com/viistorrrmmn/",
       target: "_blank",
       icon: faInstagram,
     },
