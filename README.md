@@ -12,7 +12,7 @@ Javascript | ReactJS | NextJS | Typescript | Muy Curioso, siempre aprendiendo
 
 ### NERA HUB👇🏾
 
-[✍🏿 NERA HUB](https://nera-hub.vercel.app/?utm_source=github&utm_medium=readme)
+[🌀 NERA HUB](https://nera-hub.vercel.app/?utm_source=github&utm_medium=readme)
 
 ### A coffee 👇🏾
 
