@@ -2,18 +2,10 @@ Víctor Meza | dev | Ingeniero | 👨🏾‍💻
 
 Javascript | ReactJS | NextJS | Typescript | Muy Curioso, siempre aprendiendo
 
-### me 👇🏾
+### me ➡️ [🌐 viistorrr.com](https://viistorrr.vercel.app/?utm_source=github&utm_medium=readme)
 
-[🌐 viistorrr.com](https://viistorrr.vercel.app/?utm_source=github&utm_medium=readme)
+### fN Lab ➡️ [✍🏿 fN LAB](https://fn-lab.vercel.app/?utm_source=github&utm_medium=readme)
 
-### fN Lab 👇🏾
+### NERA HUB➡️ [🌀 NERA HUB](https://nera-hub.vercel.app/?utm_source=github&utm_medium=readme)
 
-[✍🏿 fN LAB](https://fn-lab.vercel.app/?utm_source=github&utm_medium=readme)
-
-### NERA HUB👇🏾
-
-[🌀 NERA HUB](https://nera-hub.vercel.app/?utm_source=github&utm_medium=readme)
-
-### A coffee 👇🏾
-
-[☕ Buy me a coffee](https://buymeacoffee.com/viistorrr)
+### A coffee ➡️ [☕ Buy me a coffee](https://buymeacoffee.com/viistorrr)
