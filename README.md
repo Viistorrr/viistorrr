@@ -8,7 +8,7 @@ Javascript | ReactJS | NextJS | Typescript | Muy Curioso, siempre aprendiendo
 
 ### fN 👇🏾
 
-[✍🏿 fornegros.com](https://fornegros.com/?utm_source=github&utm_medium=readme)
+[✍🏿 fN LAB](https://fn-lab.vercel.app/?utm_source=github&utm_medium=readme)
 
 ### NERA HUB👇🏾
 
