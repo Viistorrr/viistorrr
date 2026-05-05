@@ -6,7 +6,7 @@ Javascript | ReactJS | NextJS | Typescript | Muy Curioso, siempre aprendiendo
 
 [🌐 viistorrr.com](https://viistorrr.vercel.app/?utm_source=github&utm_medium=readme)
 
-### fN 👇🏾
+### fN Lab 👇🏾
 
 [✍🏿 fN LAB](https://fn-lab.vercel.app/?utm_source=github&utm_medium=readme)
 
