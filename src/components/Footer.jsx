@@ -40,7 +40,7 @@ const navigation = {
     },
     {
       name: "for Negros",
-      href: "https://fornegros.com/?utm_source=viistorrr.com&utm_medium=web",
+      href: "https://fn-lab.vercel.app/?utm_source=viistorrr.com&utm_medium=web",
       target: "_blank",
       icon: faRobot,
     },
