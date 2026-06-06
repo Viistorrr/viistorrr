@@ -64,7 +64,7 @@ const navigation = {
     },
     {
       name: "Twitter",
-      href: "https://twitter.com/viistorrr",
+      href: "https://twitter.com/viistorrrmmn",
       target: "_blank",
       icon: faXTwitter,
     },
