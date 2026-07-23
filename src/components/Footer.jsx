@@ -14,6 +14,7 @@ import {
   faCamera,
   faClock,
   faListCheck,
+  faBookOpen,
   faListAlt,
   faListDots,
 } from "@fortawesome/free-solid-svg-icons";
@@ -27,7 +28,7 @@ const navigation = {
       icon: faCalendarAlt,
     },
     {
-      name: "Progreso del Año",
+      name: "Life Stream of Time",
       href: "https://lifestreamoftime.lovable.app?utm_source=viistorrr.com&utm_medium=web",
       target: "_blank",
       icon: faClock,
@@ -43,6 +44,13 @@ const navigation = {
       href: "https://fn-lab.vercel.app/?utm_source=viistorrr.com&utm_medium=web",
       target: "_blank",
       icon: faRobot,
+    },
+    
+    {
+      name: "NERA",
+      href: "https://nera-hub.vercel.app/?utm_source=viistorrr.com&utm_medium=web",
+      target: "_blank",
+      icon: faBookOpen,
     },
     {
       name: "cosas simples",
