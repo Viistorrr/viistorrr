@@ -28,6 +28,13 @@ const Home = () => {
             <span className="block text-gray-900 xl:inline hover:text-orange-400">
               Emprendedor 🚀
             </span>
+            <span className="block text-gray-900 xl:inline hover:text-orange-400">
+              {" "}
+              |{" "}
+            </span>
+            <span className="block text-gray-900 xl:inline hover:text-orange-400">
+              creo cosas • random
+            </span>
           </h1>
         </div>
       </main>
