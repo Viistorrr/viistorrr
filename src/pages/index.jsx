@@ -33,7 +33,10 @@ const Home = () => {
               |{" "}
             </span>
             <span className="block text-gray-900 xl:inline hover:text-orange-400">
-              creo cosas • random
+              creo cosas {" "}
+            </span>
+            <span className="block text-gray-900 xl:inline hover:text-orange-400">
+              • random
             </span>
           </h1>
         </div>
