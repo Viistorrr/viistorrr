@@ -3,20 +3,20 @@ import { DeviceMobileIcon, CodeIcon, PaperAirplaneIcon, DesktopComputerIcon } fr
 import Link from "next/link";
 
 const timeline = [
-  /*{
+  {
     id: 1,
-    content: "Dev",
-    target: "Jóvenes Creadores del Chocó",
-    href: "https://jovenescreadoresdelchoco.org/",
-    date: "May 2024",
+    content: "I build things like",
+    target: "NERA",
+    href: "https://nera-hub.vercel.app/",
+    date: "Currently",
     datetime: "2013-09-20",
-    icon: CodeIcon,
+    icon: DesktopComputerIcon,
     iconBackground: "bg-primary",
-  },*/
+  },
   {
     id: 2,
-    content: "Independiente",
-    target: "Ingeniería de Software",
+    content: "Autónomo | Self employed | independent in ",
+    target: "Software engineering",
     href: "#",
     date: "Ago 2023",
     datetime: "2013-09-20",
@@ -25,9 +25,9 @@ const timeline = [
   },
   {
     id: 4,
-    content: "Co-Fundador",
-    target: "for Negr@s",
-    href: "https://fornegros.com/?utm_source=viistorrr.com&utm_medium=web",
+    content: "cofounder of",
+    target: "fN Lab st st",
+    href: "https://fn-lab.vercel.app/?utm_source=viistorrr.com&utm_medium=web",
     date: "Feb 2023",
     datetime: "2013-09-20",
     icon: PaperAirplaneIcon,
@@ -142,7 +142,7 @@ export default function Example() {
                       <div>
                         <p className="text-sm text-gray-500">
                           {event.content}
-                          {" en "}
+                          {" "}
                           <strong>
                             <i>
                               <Link href={event.href}>
