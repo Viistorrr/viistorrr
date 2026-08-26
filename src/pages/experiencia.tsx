@@ -27,7 +27,7 @@ const timeline = [
     id: 4,
     content: "cofounder of",
     target: "fN Lab st st",
-    href: "https://fn-lab.vercel.app/?utm_source=viistorrr.com&utm_medium=web",
+    href: "https://instagram.com/fornegros",
     date: "Feb 2023",
     datetime: "2013-09-20",
     icon: PaperAirplaneIcon,
